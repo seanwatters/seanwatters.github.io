@@ -1,9 +1,9 @@
 body, h1, p {
   width: 980px;
   margin: 0 auto;
-  padding: 10px;
+  padding: 20px;
 }
 
 body {
-  background-color: lightblue;
+  background-color: lightgrey;
 }
