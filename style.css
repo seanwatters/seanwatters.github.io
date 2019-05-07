@@ -1,3 +1,10 @@
+body, h1, p {
+  margin: 7%;
+}
+
+
+
+
 body {
-  background-color: lightblue
+  background-color: lightblue;
 }
