@@ -1,4 +1,4 @@
-body, p{
+body, p, h1{
   word-wrap: break-word;
   width: 1000px;
   margin: 0 auto;
