@@ -5,6 +5,6 @@ body {
   background-color: silver;
 }
 
-div {
-  word-wrap: break-word;
+.div {
+  overflow-x: break-word;
 }
