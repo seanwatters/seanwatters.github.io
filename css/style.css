@@ -1,8 +1,8 @@
-body, h1, p {
+body {
   width: 1000px;
   margin: 0 auto;
   padding: 10px;
-  word-wrap: break-word;
+  overflow-x: scroll;
 }
 
 body {
