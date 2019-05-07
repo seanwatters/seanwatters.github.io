@@ -1,10 +1,10 @@
-body, p, h1{
-  word-wrap: break-word;
+body {
   width: 1000px;
   margin: 0 auto;
   padding: 10px;
+  background-color: silver;
 }
 
-body {
-  background-color: silver;
+div {
+  word-wrap: break-word;
 }
