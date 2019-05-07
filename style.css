@@ -1,6 +1,7 @@
 body, h1, p {
   width: 980px;
-  margin: 10 auto;
+  margin: 0 auto;
+  padding: 10px;
 }
 
 body {
