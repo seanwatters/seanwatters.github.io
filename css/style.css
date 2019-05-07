@@ -2,6 +2,7 @@ body, h1, p {
   width: 1000px;
   margin: 0 auto;
   padding: 10px;
+  word-wrap: break-word;
 }
 
 body {
