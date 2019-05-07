@@ -1,5 +1,6 @@
 body, h1, p {
-  margin-left: 30% auto;
+  width: 980px;
+  margin: 0 auto;
 }
 
 body {
