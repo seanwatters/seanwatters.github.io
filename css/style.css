@@ -1,9 +1,6 @@
 body {
-  width: 1000px;
+  max-width: 780px;
   margin: 0 auto;
-}
-
-pre {
   background-color: silver;
   padding: 10px;
   overflow-x: scroll;
