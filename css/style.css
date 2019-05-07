@@ -2,11 +2,5 @@ body {
   max-width: 780px;
   margin: 0 auto;
   padding: 10px;
-}
-
-pre {
   background-color: silver;
-  overflow-x: scroll;
-  padding: 10px;
-  border: 1px solid black;
 }
