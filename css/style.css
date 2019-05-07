@@ -1,10 +1,10 @@
 body {
   width: 1000px;
   margin: 0 auto;
-  padding: 10px;
-  background-color: silver;
 }
 
-.div {
-  overflow-x: break-word;
+pre {
+  background-color: silver;
+  padding: 10px;
+  overflow-x: scroll;
 }
