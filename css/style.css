@@ -1,7 +1,6 @@
 body {
-  background-color: silver;
   max-width: 780px;
   margin: 0 auto;
   padding: 10px;
-  overflow-x: scroll;
+  background-color: silver;
 }
