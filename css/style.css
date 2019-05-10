@@ -4,7 +4,6 @@ body {
 }
 
 h1 {
-  max-width: 800
   font-size: 2.5em;
   font-weight: normal;
   font-family: "Courier New";
@@ -14,6 +13,7 @@ h1 {
 h2 {
   margin-left: 0;
   font-family: "Courier New";
+  font-size: 1.4em;
 }
 
 p {
@@ -24,7 +24,6 @@ p {
 }
 
 hr {
-  max-width: 800
   display: block;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
@@ -37,8 +36,6 @@ hr {
 
 .box{
   padding: 80px;
-  padding-bottom: 200px;
   background: lightslategrey;
   background-clip: border-box;
-  width: 0 auto;
 }
