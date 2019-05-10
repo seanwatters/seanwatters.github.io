@@ -1,10 +1,10 @@
 body {
-  max-width: 700px;
   margin: 0 auto;
   background-color: white;
 }
 
 h1 {
+  max-width: 800
   font-size: 2.5em;
   font-weight: normal;
   font-family: "Courier New";
@@ -12,14 +12,17 @@ h1 {
 }
 
 h2 {
+  max-width: 800
   font-family: "Courier New";
 }
 
 p {
+  max-width: 600px;
   font-size: 1em;
 }
 
 hr {
+  max-width: 800
   display: block;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
@@ -35,5 +38,5 @@ hr {
   padding-bottom: 200px;
   background: lightslategrey;
   background-clip: border-box;
-  width: 700px;
+  width: 0 auto;
 }
