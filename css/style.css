@@ -12,13 +12,15 @@ h1 {
 }
 
 h2 {
-  max-width: 800
+  margin-left: 0;
   font-family: "Courier New";
 }
 
 p {
+  margin-left: 43px;
   max-width: 600px;
-  font-size: 1em;
+  font-size: 13px;
+  font-family: Consolas, monaco, monospace ;
 }
 
 hr {
