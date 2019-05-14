@@ -39,3 +39,15 @@ hr {
   background: lightslategrey;
   background-clip: border-box;
 }
+
+.footer{
+  color: whitesmoke;
+  text-align: center;
+  width: 100%;
+  padding: 3px;
+  position: absolute;
+  bottom: 3px;
+  background-color: lightslategrey;
+  font-family: "Courier New";
+  font-size: .7em;
+}
