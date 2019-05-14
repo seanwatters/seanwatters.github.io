@@ -3,6 +3,7 @@ body {
   background-color: white;
   max-width: 100%;
   overflow-x: hidden;
+  font-size: 85%
 }
 
 h1 {
@@ -51,5 +52,5 @@ hr {
   bottom: 3px;
   background-color: lightslategrey;
   font-family: "Courier New";
-  font-size: .7em;
+  font-size: .9em;
 }
