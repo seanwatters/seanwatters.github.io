@@ -1,6 +1,8 @@
 body {
   margin: 0 auto;
   background-color: white;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 h1 {
