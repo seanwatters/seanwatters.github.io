@@ -1,4 +1,4 @@
-/* @media only screen and (device-width: 375px) {
+@media only screen and (device-width: 375px) {
   .scale {
     font-size: 300%
   }
@@ -6,21 +6,21 @@
 
 @media only screen and (min-width: 768px) {
   .scale {
-    font-size: 200%
+    font-size: 100%
   }
 }
 
 @media only screen and (min-width: 992px) {
   .scale {
-    font-size: 90%
+    font-size: 100%
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .scale {
-    font-size: 80%
+    font-size: 100%
   }
-} */
+}
 
 body {
   margin: 0 auto;
