@@ -1,3 +1,27 @@
+@media only screen and (min-width: 600px) {
+  .scale {
+    font-size: 200%
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .scale {
+    font-size: 95%
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .scale {
+    font-size: 90%
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .scale {
+    font-size: 80%
+  }
+}
+
 body {
   margin: 0 auto;
   background-color: white;
