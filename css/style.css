@@ -1,80 +1,176 @@
-@media only screen and (device-width: 375px) {
-  .scale {
-    font-size: 150%
+@media only screen and (min-width: 600px) {
+  /* For phones: */
+  .body_style {
+    margin: 0 auto;
+    background-color: white;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .h1_style {
+    font-size: 3em;
+    font-weight: normal;
+    font-family: "Courier New";
+    color: whitesmoke;
+  }
+
+  .h2_style {
+    margin-left: 0;
+    font-family: "Courier New";
+    font-size: 1.5em;
+  }
+
+  .p_style {
+    margin-left: 43px;
+    max-width: 600em;
+    font-size: 1em;
+    font-family: Consolas, monaco, monospace ;
+  }
+
+  .hr_style {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-width: 0.5px;
+    color: whitesmoke;
+  }
+
+  .header_box{
+    padding: 80px;
+    background: lightslategrey;
+    background-clip: border-box;
+  }
+
+  .footer{
+    color: whitesmoke;
+    text-align: center;
+    width: 100%;
+    padding: 3px;
+    position: absolute;
+    bottom: 3px;
+    background-color: lightslategrey;
+    font-family: "Courier New";
+    font-size: .9em;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .body_style {
+    margin: 0 auto;
+    background-color: white;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .h1_style {
+    font-size: 3em;
+    font-weight: normal;
+    font-family: "Courier New";
+    color: whitesmoke;
+  }
+
+  .h2_style {
+    margin-left: 0;
+    font-family: "Courier New";
+    font-size: 1.5em;
+  }
+
+  .p_style {
+    margin-left: 43px;
+    max-width: 600em;
+    font-size: 1em;
+    font-family: Consolas, monaco, monospace ;
+  }
+
+  .hr_style {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-width: 0.5px;
+    color: whitesmoke;
+  }
+
+  .header_box{
+    padding: 80px;
+    background: lightslategrey;
+    background-clip: border-box;
+  }
+
+  .footer{
+    color: whitesmoke;
+    text-align: center;
+    width: 100%;
+    padding: 3px;
+    position: absolute;
+    bottom: 3px;
+    background-color: lightslategrey;
+    font-family: "Courier New";
+    font-size: .9em;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .scale {
-    font-size: 90%
+  /* For desktop: */
+  .body_style {
+    margin: 0 auto;
+    background-color: white;
+    max-width: 100%;
+    overflow-x: hidden;
   }
-}
 
-@media only screen and (min-width: 992px) {
-  .scale {
-    font-size: 90%
+  .h1_style {
+    font-size: 3em;
+    font-weight: normal;
+    font-family: "Courier New";
+    color: whitesmoke;
   }
-}
 
-@media only screen and (min-width: 1200px) {
-  .scale {
-    font-size: 90%
+  .h2_style {
+    margin-left: 0;
+    font-family: "Courier New";
+    font-size: 1.5em;
   }
-}
 
-body {
-  margin: 0 auto;
-  background-color: white;
-  max-width: 100%;
-  overflow-x: hidden;
+  .p_style {
+    margin-left: 43px;
+    max-width: 600em;
+    font-size: 1em;
+    font-family: Consolas, monaco, monospace ;
+  }
 
-}
+  .hr_style {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-width: 0.5px;
+    color: whitesmoke;
+  }
 
-h1 {
-  font-size: 3em;
-  font-weight: normal;
-  font-family: "Courier New";
-  color: whitesmoke;
-}
+  .header_box{
+    padding: 80px;
+    background: lightslategrey;
+    background-clip: border-box;
+  }
 
-h2 {
-  margin-left: 0;
-  font-family: "Courier New";
-  font-size: 1.5em;
-}
-
-p {
-  margin-left: 43px;
-  max-width: 600em;
-  font-size: 1em;
-  font-family: Consolas, monaco, monospace ;
-}
-
-hr {
-  display: block;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  margin-left: auto;
-  margin-right: auto;
-  border-style: solid;
-  border-width: 0.5px;
-  color: whitesmoke;
-}
-
-.box{
-  padding: 80px;
-  background: lightslategrey;
-  background-clip: border-box;
-}
-
-.footer{
-  color: whitesmoke;
-  text-align: center;
-  width: 100%;
-  padding: 3px;
-  position: absolute;
-  bottom: 3px;
-  background-color: lightslategrey;
-  font-family: "Courier New";
-  font-size: .9em;
+  .footer{
+    color: whitesmoke;
+    text-align: center;
+    width: 100%;
+    padding: 3px;
+    position: absolute;
+    bottom: 3px;
+    background-color: lightslategrey;
+    font-family: "Courier New";
+    font-size: .9em;
+  }
 }
