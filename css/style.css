@@ -1,4 +1,4 @@
-@media only screen and (min-width: 375px) {
+@media only screen and (width: 375px) {
   .scale {
     font-size: 300%
   }
