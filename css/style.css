@@ -27,11 +27,11 @@ body {
   background-color: white;
   max-width: 100%;
   overflow-x: hidden;
-  font-size: 85%
+
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 3em;
   font-weight: normal;
   font-family: "Courier New";
   color: whitesmoke;
@@ -40,13 +40,13 @@ h1 {
 h2 {
   margin-left: 0;
   font-family: "Courier New";
-  font-size: 1.4em;
+  font-size: 1.5em;
 }
 
 p {
   margin-left: 43px;
-  max-width: 600px;
-  font-size: 13px;
+  max-width: 600em;
+  font-size: 1em;
   font-family: Consolas, monaco, monospace ;
 }
 
