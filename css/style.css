@@ -132,16 +132,17 @@
   }
 
   .h2_style {
-    padding-top: 65px;
+    padding-top: 90px;
     line-height: 30%;
     font-family: "Courier New";
-    font-size: 6em;
+    font-size: 8em;
   }
 
   .p_style {
-    max-width: 800px;
-    font-size: 27.1px;
-    font-family: Consolas, monaco, monospace ;
+    margin-left: 17px;
+    max-width: 10000px;
+    font-size: 60px;
+    font-family: Consolas, monaco, monospace;
   }
 
   .hr_style {
@@ -156,22 +157,25 @@
   }
 
   .header_box{
-    padding: 150;
-    width: 100%;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    width: 84%;
     background: lightslategrey;
     background-clip: border-box;
   }
 
   .social_media_links{
-    width: 111%;
+    width: 99%;
     text-align: center;
     color: whitesmoke;
-    bottom: 1390px;
+    bottom: 1000px;
     font-family: "Courier New";
     font-size: 2.7em;
     position: absolute;
   }
 }
+
+
 
 /*iphone 6/7/8*/
 @media only screen and (device-width : 375px) and (device-height : 667px) and (-webkit-device-pixel-ratio : 2) {
