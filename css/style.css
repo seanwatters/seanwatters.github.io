@@ -43,7 +43,7 @@
   background-clip: border-box;
 }
 
-.footer{
+.social_media_links{
   color: whitesmoke;
   text-align: center;
   width: 100%;
@@ -75,7 +75,7 @@
   .h2_style {
     margin-left: 0;
     font-family: "Courier New";
-    font-size: 1.5em;
+    font-size: 5em;
   }
 
   .p_style {
@@ -119,29 +119,28 @@
 /*iphone x*/
 @media only screen and (device-width : 375px) and (device-height : 812px) and (-webkit-device-pixel-ratio : 3) {
   .body_style {
-    margin: 0 auto;
+    width: 100%;
     background-color: white;
-    max-width: 100%;
     overflow-x: hidden;
   }
 
   .h1_style {
-    font-size: 10em;
+    font-size: 12em;
     font-weight: normal;
     font-family: "Courier New";
     color: whitesmoke;
   }
 
   .h2_style {
-    margin-left: 0;
+    padding-top: 65px;
+    line-height: 30%;
     font-family: "Courier New";
-    font-size: 1.5em;
+    font-size: 6em;
   }
 
   .p_style {
-    margin-left: 43px;
-    max-width: 600em;
-    font-size: 1em;
+    max-width: 800px;
+    font-size: 27.1px;
     font-family: Consolas, monaco, monospace ;
   }
 
@@ -152,26 +151,25 @@
     margin-left: auto;
     margin-right: auto;
     border-style: solid;
-    border-width: 0.5px;
+    border-width: 1.5px;
     color: whitesmoke;
   }
 
   .header_box{
-    padding: 80px;
+    padding: 150;
+    width: 100%;
     background: lightslategrey;
     background-clip: border-box;
   }
 
-  .footer{
-    color: whitesmoke;
+  .social_media_links{
+    width: 111%;
     text-align: center;
-    width: 100%;
-    padding: 3px;
-    position: absolute;
-    bottom: 3px;
-    background-color: lightslategrey;
+    color: whitesmoke;
+    bottom: 1390px;
     font-family: "Courier New";
-    font-size: .9em;
+    font-size: 2.7em;
+    position: absolute;
   }
 }
 
