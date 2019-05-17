@@ -18,16 +18,16 @@
 }
 
 .h2_style {
-  top:400px;
+  top:350px;
   position:absolute;
   z-index: 950;
-  margin-left: 10px;
+  margin-left: 40px;
   font-family: "Courier New";
-  font-size: 1.5em;
+  font-size: 4em;
 }
 
 .p_style {
-  top:450px;
+  top:470px;
   z-index: 950;
   position:absolute;
   margin-left: 43px;
