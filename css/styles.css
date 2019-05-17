@@ -33,7 +33,7 @@
   margin-left: 43px;
   max-width: 600em;
   font-size: .84em;
-  font-family: Consolas, monaco, monospace ;
+  font-family: Consolas, monaco, monospace;
 }
 
 .hr_style {
@@ -57,7 +57,7 @@
   padding: 140px;
   background: grey;
   background-clip: border-box;
-  width: 100%
+  width: 100%;
 }
 
 .social_media_links{
@@ -75,7 +75,7 @@
 /* @media only screen and (device-width : 320px) and (device-height : 568px) and (-webkit-device-pixel-ratio : 2) {} */
 
   /*iphone x*/
-  @media only screen and (device-width : 375px) and (device-height : 812px) and (-webkit-device-pixel-ratio : 3) {
+  /* @media only screen and (device-width : 375px) and (device-height : 812px) and (-webkit-device-pixel-ratio : 3) {
     .body_style {
       width: 100%;
       background-color: white;
@@ -131,7 +131,7 @@
       font-size: 2.7em;
       position: absolute;
     }
-  }
+  } */
 /*iphone 6/7/8*/
 /* @media only screen and (device-width : 375px) and (device-height : 667px) and (-webkit-device-pixel-ratio : 2) {} */
 
