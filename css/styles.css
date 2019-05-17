@@ -7,26 +7,39 @@
 }
 
 .h1_style {
+  top: 80px;
+  position:absolute;
+  z-index: 950;
   font-size: 3em;
   font-weight: normal;
   font-family: "Courier New";
   color: whitesmoke;
+  margin-left: 10px
 }
 
 .h2_style {
-  margin-left: 0;
+  top:400px;
+  position:absolute;
+  z-index: 950;
+  margin-left: 10px;
   font-family: "Courier New";
   font-size: 1.5em;
 }
 
 .p_style {
+  top:450px;
+  z-index: 950;
+  position:absolute;
   margin-left: 43px;
   max-width: 600em;
-  font-size: 1em;
+  font-size: .84em;
   font-family: Consolas, monaco, monospace ;
 }
 
 .hr_style {
+  z-index:950;
+  top: 100px;
+  position:absolute;
   display: block;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
@@ -34,25 +47,27 @@
   margin-right: auto;
   border-style: solid;
   border-width: 0.5px;
-  color: whitesmoke;
+  color: black;
 }
 
 .header_box{
-  padding: 80px;
-  background: lightslategrey;
+  z-index: -1;
+  position:absolute;
+  top:78px;
+  padding: 140px;
+  background: grey;
   background-clip: border-box;
+  width: 100%
 }
 
 .social_media_links{
   color: whitesmoke;
-  text-align: center;
-  width: 100%;
-  padding: 3px;
-  position: absolute;
-  bottom: 3px;
-  background-color: lightslategrey;
+  margin:10px;
+  top: 85px;
   font-family: "Courier New";
   font-size: .9em;
+  right: 0;
+  position:absolute;
 }
 
 
@@ -103,7 +118,7 @@
       padding-top: 1px;
       padding-bottom: 1px;
       width: 84%;
-      background: lightslategrey;
+      background: grey;
       background-clip: border-box;
     }
 
