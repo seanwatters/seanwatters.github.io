@@ -79,7 +79,13 @@ p {
   right:0;
 }
 
-.social_media_links{
+/* links */
+
+.page_navigation_links {
+
+}
+
+.social_media_links {
   color: whitesmoke;
   margin-right:30px;
   top: 290px;
@@ -88,6 +94,8 @@ p {
   right: 0;
   position:absolute;
 }
+
+
 
 
 /*iphone 5/SE*/
