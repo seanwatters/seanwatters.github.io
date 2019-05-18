@@ -7,7 +7,7 @@
   z-index: -1;
   position:absolute;
   top:78px;
-  padding: 140px;
+  height: 280px;
   background: grey;
   background-clip: border-box;
   width: 100%;
@@ -15,6 +15,13 @@
 }
 
 /* generic styling */
+body {
+  background-color: white;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 h2 {
   font-family: "Courier New";
   font-size: 4em;
@@ -29,12 +36,6 @@ p {
 }
 
 /* specific styling */
-.body_style {
-  margin: 0 auto;
-  background-color: white;
-  max-width: 100%;
-  overflow-x: hidden;
-}
 
 .name_style {
   top: 80px;
@@ -44,29 +45,30 @@ p {
   font-weight: normal;
   font-family: "Courier New";
   color: whitesmoke;
-  margin-left: 20px;
+  margin-left: 5%;
 }
 
 .bio_header_style {
   top:350px;
   position:absolute;
   z-index: 1;
-  margin-left: 40px;
+  margin-left: 10%;
 }
 
 .bio_text_style {
   top:470px;
   z-index: 1;
   position:absolute;
-  margin-left: 43px;
+  margin-left: 11%;
   max-width: 600px;
+  margin-right: 11%;
 }
 
 .second_header_style {
   top:615px;
   position:absolute;
   z-index: 1;
-  margin-right: 40px;
+  margin-right: 10%;
   right: 0;
 }
 
@@ -74,9 +76,10 @@ p {
   top:735px;
   z-index: 1;
   position:absolute;
-  margin-right: 43px;
+  margin-right: 11%;
   max-width: 600px;
   right:0;
+  margin-left: 11%;
 }
 
 /* links */
@@ -87,7 +90,7 @@ p {
 
 .social_media_links {
   color: whitesmoke;
-  margin-right:30px;
+  margin-right:7%;
   top: 290px;
   font-family: "Courier New";
   font-size: .9em;
