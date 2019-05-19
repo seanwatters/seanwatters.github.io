@@ -18,7 +18,7 @@ a:active {
 }
 
 /* background */
-.header_band{
+.header_band {
   z-index: -1;
   position:absolute;
   top:78px;
@@ -29,7 +29,7 @@ a:active {
   box-shadow: 1px 1px 1px white;
 }
 
-.footer_band{
+.footer_band {
   z-index: -1;
   width: 100%;
   height: 400px;
@@ -92,7 +92,7 @@ p {
 .title_style {
   font-size: 10em;
   font-weight: normal;
-  font-family: "courier new";
+  font-family: "Courier New";
   color: whitesmoke;
   margin-left: 7%;
   margin-right: 7%;
