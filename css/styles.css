@@ -105,18 +105,40 @@ p {
   padding-top: 450px;
 }
 
+.first_header_style_home {
+  padding-top: 400px;
+  float: right;
+  margin-right: 14%;
+  font-size: 4.15em;
+}
+
 .first_text_style {
   max-width: 600px;
 
 }
 
-.second_header_style {
+.first_text_style_home {
+  max-width: 600px;
+  float: right;
+  margin-right: 11.5%
+}
+
+.right_header_style {
   float: right;
 }
 
-.second_text_style {
+.right_text_style {
   max-width: 600px;
   float: right;
+}
+
+.left_header_style {
+  float: left;
+}
+
+.left_text_style {
+  max-width: 600px;
+  float: left;
 }
 
 /* links */
