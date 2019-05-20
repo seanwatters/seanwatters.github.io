@@ -114,7 +114,6 @@ p {
 
 .first_text_style {
   max-width: 600px;
-
 }
 
 .first_text_style_home {
@@ -133,12 +132,10 @@ p {
 }
 
 .left_header_style {
-  float: left;
 }
 
 .left_text_style {
   max-width: 600px;
-  float: left;
 }
 
 /* links */
