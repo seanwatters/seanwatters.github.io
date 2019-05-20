@@ -21,7 +21,7 @@ a:active {
 .header_band {
   z-index: -1;
   position:absolute;
-  top:78px;
+  top:125px;
   height: 320px;
   background: grey;
   background-clip: border-box;
@@ -102,11 +102,11 @@ p {
 }
 
 .first_header_style {
-  padding-top: 450px;
+  padding-top: 500px;
 }
 
 .first_header_style_home {
-  padding-top: 400px;
+  padding-top: 450px;
   float: right;
   margin-right: 14%;
   font-size: 4.15em;
@@ -114,6 +114,7 @@ p {
 
 .first_text_style {
   max-width: 600px;
+
 }
 
 .first_text_style_home {
@@ -132,10 +133,12 @@ p {
 }
 
 .left_header_style {
+  float: left;
 }
 
 .left_text_style {
   max-width: 600px;
+  float: left;
 }
 
 /* links */
