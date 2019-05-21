@@ -108,7 +108,7 @@ p {
   float: right;
 }
 
-.first_blog_style {
+.first_blog_post_style {
   padding-top: 500px;
   font-size: 2em;
 }
@@ -246,6 +246,11 @@ p {
     padding-top: 400px;
     float: right;
     font-size: 2.5em;
+  }
+
+  .first_blog_post_style {
+    padding-top: 450px;
+    font-size: 1.75em;
   }
 
   .right_header_style {
