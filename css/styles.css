@@ -112,6 +112,11 @@ p {
   font-size: 4.15em;
 }
 
+.first_blog_style {
+  padding-top: 500px;
+  font-size: 2em;
+}
+
 .first_text_style {
   max-width: 600px;
 }
