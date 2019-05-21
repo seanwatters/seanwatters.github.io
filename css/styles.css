@@ -188,64 +188,20 @@ p {
 /*iphone 5/SE*/
 /* @media only screen and (device-width : 320px) and (device-height : 568px) and (-webkit-device-pixel-ratio : 2) {} */
 
-/*iphone x*/
-/* @media only screen and (device-width : 375px) and (device-height : 812px) and (-webkit-device-pixel-ratio : 3) {
-  .body_style {
-    width: 100%;
-    background-color: white;
-    overflow-x: hidden;
-  }
+iphone x
+@media only screen and (device-width : 375px) and (device-height : 812px) and (-webkit-device-pixel-ratio : 3) {
 
-  .h1_style {
-    font-size: 12em;
-    font-weight: normal;
+  .page_navigation_links {
+    color: black;
+    margin-right:7%;
+    top: 50px;
     font-family: "Courier New";
-    color: whitesmoke;
-  }
+    font-size: 1.6em;
+    right: 0;
+    position:absolute;
 
-  .h2_style {
-    padding-top: 90px;
-    line-height: 30%;
-    font-family: "Courier New";
-    font-size: 8em;
   }
-
-  .p_style {
-    margin-left: 17px;
-    max-width: 10000px;
-    font-size: 60px;
-    font-family: Consolas, monaco, monospace;
-  }
-
-  .hr_style {
-    display: block;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: solid;
-    border-width: 1.5px;
-    color: whitesmoke;
-  }
-
-  .header_box{
-    padding-top: 1px;
-    padding-bottom: 1px;
-    width: 84%;
-    background: grey;
-    background-clip: border-box;
-  }
-
-  .social_media_links{
-    width: 98%;
-    text-align: center;
-    color: whitesmoke;
-    bottom: 1000px;
-    font-family: "Courier New";
-    font-size: 2.7em;
-    position: absolute;
-  }
-} */
+}
 /*iphone 6/7/8*/
 /* @media only screen and (device-width : 375px) and (device-height : 667px) and (-webkit-device-pixel-ratio : 2) {} */
 
