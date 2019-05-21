@@ -1,23 +1,45 @@
 /* For desktop: */
-/****************/
+
+/************************/
+
+/* link formating */
 
 a:link {
   text-decoration: none;
 }
-
 a:visited {
   text-decoration: none;
 }
-
 a:hover {
   text-decoration: underline;
 }
-
 a:active {
   text-decoration: underline;
 }
 
-/* background */
+/* header */
+
+.name_header {
+  color: black;
+  margin-left:7%;
+  top: 20px;
+  font-family: "Courier New";
+  font-size: 2em;
+  left: 0;
+  position:absolute;
+  font-weight: bold;
+}
+
+.page_navigation_links {
+  color: black;
+  margin-right:7%;
+  top: 20px;
+  font-family: "Courier New";
+  font-size: 1.6em;
+  right: 0;
+  position:absolute;
+}
+
 .header_band {
   z-index: -1;
   position:absolute;
@@ -29,19 +51,20 @@ a:active {
   box-shadow: 1px 1px 1px white;
 }
 
-.footer_band {
-  z-index: -1;
-  width: 100%;
-  height: 400px;
-  background-clip: border-box;
-  box-shadow: 1px 1px 1px white;
-  background: black;
-  margin-top: 200px;
-  clear: both;
-
+.title_style {
+  font-size: 10em;
+  font-weight: normal;
+  font-family: "Courier New";
+  color: whitesmoke;
+  margin-left: 7%;
+  margin-right: 7%;
+  line-height: 0%;
+  padding-top: 50px;
+  -webkit-text-stroke: 2px;
 }
 
-/* generic styling */
+/* main*/
+
 body {
   z-index: 1;
   background-color: white;
@@ -54,7 +77,7 @@ body {
 h2 {
   z-index: 1;
   font-family: "Courier New";
-  font-size: 4em;
+  font-size: 3.5em;
   padding-bottom: 0px;
   color: black;
   line-height: 95%;
@@ -72,34 +95,9 @@ p {
   margin-right: 12%;
   margin-left: 12%;
   clear: both;
-  /* padding-bottom: 10; */
 }
 
 /* specific styling */
-
-.name_header {
-  color: black;
-  margin-left:7%;
-  top: 20px;
-  font-family: "Courier New";
-  font-size: 2em;
-  left: 0;
-  position:absolute;
-  font-weight: bold;
-
-}
-
-.title_style {
-  font-size: 10em;
-  font-weight: normal;
-  font-family: "Courier New";
-  color: whitesmoke;
-  margin-left: 7%;
-  margin-right: 7%;
-  line-height: 0%;
-  padding-top: 50px;
-  -webkit-text-stroke: 2px;
-}
 
 .first_header_style {
   padding-top: 500px;
@@ -108,7 +106,6 @@ p {
 .first_header_style_home {
   padding-top: 450px;
   float: right;
-  font-size: 4.15em;
 }
 
 .first_blog_style {
@@ -143,16 +140,21 @@ p {
   max-width: 600px;
 }
 
-/* links */
+.temp_email_address{
+  font-size: 1.5em;
+}
 
-.page_navigation_links {
-  color: black;
-  margin-right:7%;
-  top: 20px;
-  font-family: "Courier New";
-  font-size: 1.6em;
-  right: 0;
-  position:absolute;
+/* footer */
+
+.footer_band {
+  z-index: -1;
+  width: 100%;
+  height: 400px;
+  background-clip: border-box;
+  box-shadow: 1px 1px 1px white;
+  background: black;
+  margin-top: 200px;
+  clear: both;
 
 }
 
@@ -164,10 +166,6 @@ p {
   font-size: .9em;
 }
 
-.temp_email_address{
-  font-size: 1.5em;
-}
-
 .tm{
 
   z-index: 1;
@@ -175,7 +173,6 @@ p {
   font-size: .5em;
   font-family: monospace;
   color: black;
-
   width: 100%;
   margin-bottom: 3px;
   margin-top: 20px;
@@ -183,27 +180,117 @@ p {
 }
 
 
+/* tablet */
+@media only screen and (min-width: 421px) and (max-width : 768px) {
 
+}
 
-/*iphone 5/SE*/
-/* @media only screen and (device-width : 320px) and (device-height : 568px) and (-webkit-device-pixel-ratio : 2) {} */
+/* phone */
+@media only screen and (max-width : 420px) {
 
-iphone x
-@media only screen and (device-width : 375px) and (device-height : 812px) and (-webkit-device-pixel-ratio : 3) {
+  /* header */
+
+  .name_header {
+    color: black;
+    margin-left: 6.3%;
+    top: 20px;
+    font-family: "Courier New";
+    font-size: 2em;
+    left: 0;
+    position:absolute;
+    font-weight: bold;
+  }
 
   .page_navigation_links {
     color: black;
     margin-right:7%;
-    top: 50px;
     font-family: "Courier New";
-    font-size: 1.6em;
-    right: 0;
+    font-size: 1.3em;
+    padding-top: 43px;
+    left: 6.3%;
     position:absolute;
+  }
+
+  .header_band {
+    z-index: -1;
+    position:absolute;
+    top:125px;
+    height: 250px;
+    background: grey;
+    background-clip: border-box;
+    width: 100%;
+    box-shadow: 1px 1px 1px white;
+  }
+
+  .title_style {
+    font-size: 4.7em;
+    font-weight: normal;
+    font-family: "Courier New";
+    color: whitesmoke;
+    margin-left: 6.3%;
+    margin-right: 7%;
+    line-height: 0%;
+    padding-top: 57px;
+    -webkit-text-stroke: 2px;
+    float: left;
+  }
+
+  /* main */
+
+  .first_header_style {
+    padding-top: 450px;
+    font-size: 2.5em;
+  }
+
+  .first_header_style_home {
+    padding-top: 400px;
+    float: right;
+    font-size: 2.5em;
+  }
+
+  .right_header_style {
+    float: right;
+    font-size: 2.5em;
+  }
+
+  .left_header_style {
+    padding-top: 50px;
+    font-size: 2.5em;
+  }
+
+  /* footer */
+
+  .footer_band {
+    z-index: -1;
+    width: 100%;
+    height: 300px;
+    background-clip: border-box;
+    box-shadow: 1px 1px 1px white;
+    background: black;
+    margin-top: 200px;
+    clear: both;
 
   }
-}
-/*iphone 6/7/8*/
-/* @media only screen and (device-width : 375px) and (device-height : 667px) and (-webkit-device-pixel-ratio : 2) {} */
 
-/*iphone 6/7/8plus*/
-/* @media only screen and (device-width : 414px) and (device-height : 736px) and (-webkit-device-pixel-ratio : 3) {} */
+  .social_media_links {
+    padding-top: 50px;
+    color: whitesmoke;
+    text-align: center;
+    font-family: "Courier New";
+    font-size: .85em;
+  }
+
+  .tm{
+
+    z-index: 1;
+    text-align: center;
+    font-size: .5em;
+    font-family: monospace;
+    color: black;
+    width: 100%;
+    margin-bottom: 3px;
+    margin-top: 20px;
+    clear: both;
+  }
+
+}
