@@ -251,7 +251,6 @@ p {
     position:absolute;
     top:100px;
     height: 200px;
-    background: grey;
     background-clip: border-box;
     width: 100%;
     box-shadow: 1px 1px 1px white;
