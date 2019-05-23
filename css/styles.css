@@ -275,9 +275,9 @@ p {
 
   p {
     z-index: 1;
-    font-size: .9em;
+    font-size: 1em;
     font-family: Consolas, monaco, monospace;
-    line-height: 300%;
+    line-height: 200%;
     color: black;
     margin-right: 12%;
     margin-left: 12%;
