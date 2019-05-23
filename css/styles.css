@@ -44,8 +44,8 @@ a:active {
   z-index: -1;
   position:absolute;
   top:125px;
-  height: 320px;
-  background: grey;
+  height: 270px;
+  background-color: black; opacity: 0.79;
   background-clip: border-box;
   width: 100%;
   box-shadow: 1px 1px 1px white;
@@ -85,6 +85,33 @@ h2 {
   margin-left: 11%;
   clear: both;
 }
+
+h3 {
+  z-index: 1;
+  font-family: monospace;
+  font-size: 2.3em;
+  padding-bottom: 0px;
+  color: black;
+  line-height: 95%;
+  margin-right: 11%;
+  margin-left: 11%;
+  clear: both;
+  opacity: 0.5;
+}
+
+h4 {
+  z-index: 1;
+  font-family: "Courier New";
+  font-size: 1.7em;
+  padding-bottom: 0px;
+  color: black;
+  line-height: 95%;
+  margin-right: 15%;
+  margin-left: 15%;
+  clear: both;
+}
+
+
 
 p {
   z-index: 1;
