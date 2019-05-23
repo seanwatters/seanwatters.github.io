@@ -254,6 +254,7 @@ p {
     background-clip: border-box;
     width: 100%;
     box-shadow: 1px 1px 1px white;
+    background-color: black; opacity: 0.79;
   }
 
   .title_style {
