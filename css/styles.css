@@ -43,8 +43,8 @@ a:active {
 .header_band {
   z-index: -1;
   position:absolute;
-  top:125px;
-  height: 270px;
+  top:84px;
+  height: 157px;
   background-color: black; opacity: 0.79;
   background-clip: border-box;
   width: 100%;
@@ -52,14 +52,14 @@ a:active {
 }
 
 .title_style {
-  font-size: 10em;
+  font-size: 7em;
   font-weight: normal;
   font-family: "Courier New";
   color: whitesmoke;
   margin-left: 7%;
   margin-right: 7%;
   line-height: 0%;
-  padding-top: 50px;
+  padding-bottom: 4px;
   -webkit-text-stroke: 2px;
 }
 
@@ -89,14 +89,14 @@ h2 {
 h3 {
   z-index: 1;
   font-family: monospace;
-  font-size: 2.3em;
+  font-size: 1.9em;
   padding-bottom: 0px;
   color: black;
   line-height: 95%;
   margin-right: 11%;
   margin-left: 11%;
   clear: both;
-  opacity: 0.5;
+  opacity: 0.75;
 }
 
 h4 {
@@ -106,8 +106,8 @@ h4 {
   padding-bottom: 0px;
   color: black;
   line-height: 95%;
-  margin-right: 15%;
-  margin-left: 15%;
+  margin-right: 11%;
+  margin-left: 11%;
   clear: both;
 }
 
@@ -127,16 +127,16 @@ p {
 /* specific styling */
 
 .first_header_style {
-  padding-top: 500px;
+  padding-top: 300px;
 }
 
 .first_header_style_home {
-  padding-top: 450px;
+  padding-top: 250px;
   float: right;
 }
 
 .first_blog_post_style {
-  padding-top: 500px;
+  padding-top: 300px;
   font-size: 2em;
 }
 
@@ -232,13 +232,7 @@ p {
 
   .page_navigation_links {
     top: 0px;
-    /* color: black;
-    margin-right:7%;
-    font-family: "Courier New";
-    font-size: 1.3em;
-    padding-top: 43px;
-    left: 6.3%;
-    position:absolute; */
+
     position: relative;
     text-align: center;
     margin-left: 0;
