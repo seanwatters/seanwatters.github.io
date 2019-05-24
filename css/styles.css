@@ -38,6 +38,7 @@ a:active {
   font-size: 1.6em;
   right: 0;
   position:absolute;
+  z-index: 100;
 }
 
 .header_band {
@@ -97,6 +98,7 @@ h3 {
   margin-left: 11%;
   clear: both;
   opacity: 0.75;
+  z-index: -100;
 }
 
 h4 {
@@ -108,7 +110,7 @@ h4 {
   line-height: 95%;
   margin-right: 11%;
   margin-left: 11%;
-  clear: both;
+  clear: both
 }
 
 
