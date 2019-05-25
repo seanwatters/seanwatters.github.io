@@ -21,35 +21,36 @@ a:active {
 
 .name_header {
   color: black;
-  margin-left:7%;
-  top: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
   font-family: "Courier New";
   font-size: 2em;
-  left: 0;
-  position:absolute;
   font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .page_navigation_links {
   color: black;
   margin-right:7%;
-  top: 20px;
   font-family: "Courier New";
   font-size: 1.6em;
-  right: 0;
-  position:absolute;
+  left: 500px;
+  position:relative;
+  bottom: 32px;
   z-index: 100;
+  margin-right: 7%;
 }
 
 .header_band {
   z-index: -1;
-  position:absolute;
-  top:84px;
   height: 157px;
   background-color: black; opacity: 0.79;
   background-clip: border-box;
-  width: 100%;
+  width: 850px;
   box-shadow: 1px 1px 1px white;
+  position: relative;
+  bottom: 70px;
 }
 
 .title_style {
@@ -59,9 +60,8 @@ a:active {
   color: whitesmoke;
   margin-left: 7%;
   margin-right: 7%;
-  line-height: 0%;
-  padding-bottom: 4px;
   -webkit-text-stroke: 2px;
+  padding-top: 8px;
 }
 
 /* main*/
@@ -69,7 +69,7 @@ a:active {
 body {
   z-index: 1;
   background-color: white;
-  width: 100%;
+  max-width: 850px;
   margin-left: auto;
   margin-right: auto;
   clear: both;
@@ -134,28 +134,9 @@ p {
 
 /* specific styling */
 
-.first_header_style {
-  padding-top: 300px;
-}
-
-.first_header_style_home {
-  padding-top: 150px;
-  float: right;
-}
-
 .first_blog_post_style {
-  padding-top: 350px;
+  padding-top: 80px;
   font-size: 2em;
-}
-
-.first_text_style {
-  max-width: 600px;
-}
-
-.first_text_style_home {
-  max-width: 600px;
-  float: right;
-  margin-right: 11.5%;
 }
 
 .right_header_style {
