@@ -75,6 +75,12 @@ body {
   clear: both;
 }
 
+main {
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 h2 {
   z-index: 1;
   font-family: "Courier New";
@@ -82,8 +88,8 @@ h2 {
   padding-bottom: 0px;
   color: black;
   line-height: 95%;
-  margin-right: 11%;
-  margin-left: 11%;
+  margin-right: 80px;
+  margin-left: 80px;
   clear: both;
 }
 
@@ -133,12 +139,12 @@ p {
 }
 
 .first_header_style_home {
-  padding-top: 250px;
+  padding-top: 150px;
   float: right;
 }
 
 .first_blog_post_style {
-  padding-top: 300px;
+  padding-top: 350px;
   font-size: 2em;
 }
 
