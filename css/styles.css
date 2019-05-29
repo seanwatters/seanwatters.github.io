@@ -23,23 +23,31 @@ a:active {
   color: black;
   padding-left: 20px;
   padding-top: 20px;
-  font-family: "Courier New";
-  font-size: 2em;
+  font-family: sentenial;
   font-weight: bold;
+  font-size: 2em;
   margin-left: auto;
   margin-right: auto;
 }
 
+
 .page_navigation_links {
   color: black;
   margin-right:7%;
-  font-family: "Courier New";
+  font-family: "Courier New", Courier, monospace;
   font-size: 1.6em;
   left: 500px;
   position:relative;
-  bottom: 32px;
+  bottom: 70px;
   z-index: 100;
   margin-right: 7%;
+  display: inline;
+  font-weight: 400;
+}
+
+.nav_links_list {
+  float: left;
+  padding: 10px;
 }
 
 .header_band {
@@ -54,14 +62,13 @@ a:active {
 }
 
 .title_style {
-  font-size: 7em;
-  font-weight: normal;
-  font-family: "Courier New";
+  font-size: 80px;
+  font-family: sentenial;
+  font-weight: 100;
   color: whitesmoke;
   margin-left: 7%;
   margin-right: 7%;
-  -webkit-text-stroke: 2px;
-  padding-top: 8px;
+  padding-top: 40px;
 }
 
 /* main*/
@@ -83,7 +90,8 @@ main {
 
 h2 {
   z-index: 1;
-  font-family: "Courier New";
+  font-family: sentential;
+  font-weight: 100;
   font-size: 3.5em;
   padding-bottom: 0px;
   color: black;
@@ -95,13 +103,10 @@ h2 {
 
 h3 {
   z-index: 1;
-  font-family: monospace;
-  font-size: 1.9em;
-  padding-bottom: 0px;
+  font-family: sentenial;
+  font-size: 32px;
   color: black;
   line-height: 95%;
-  margin-right: 11%;
-  margin-left: 11%;
   clear: both;
   opacity: 0.75;
   z-index: -100;
@@ -109,7 +114,7 @@ h3 {
 
 h4 {
   z-index: 1;
-  font-family: "Courier New";
+  font-family: sentenial;
   font-size: 1.7em;
   padding-bottom: 0px;
   color: black;
@@ -123,13 +128,14 @@ h4 {
 
 p {
   z-index: 1;
-  font-size: .84em;
-  font-family: Consolas, monaco, monospace;
+  font-size: 16.5px;
+  font-family: "Courier New", Courier, monospace;
   line-height: 300%;
   color: black;
   margin-right: 12%;
   margin-left: 12%;
   clear: both;
+  max-width: 700px
 }
 
 /* specific styling */
@@ -144,7 +150,6 @@ p {
 }
 
 .right_text_style {
-  max-width: 600px;
   float: right;
 }
 
@@ -153,7 +158,6 @@ p {
 }
 
 .left_text_style {
-  max-width: 600px;
 }
 
 .temp_email_address{
@@ -178,7 +182,7 @@ p {
   padding-top: 50px;
   color: whitesmoke;
   text-align: center;
-  font-family: "Courier New";
+  font-family: "Courier New", Courier, monospace;
   font-size: .9em;
 }
 

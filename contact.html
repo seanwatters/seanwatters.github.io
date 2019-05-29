@@ -12,9 +12,11 @@
         <a href="index" style="color: black; text-decoration: none;">SEAN WATTERS</a>
       </div>
       <div class="page_navigation_links">
-         <a href="index" style="color: black">HOME</a> |
-         <a href="blog" style="color: black">BLOG</a> |
-         <a href="contact" style="color: black">CONTACT</a>
+        <ul style="list-style-type: none;">
+          <li class="nav_links_list"><a href="index" style="color: black">HOME</a> </li>
+          <li class="nav_links_list"><a href="blog" style="color: black">BLOG</a></li>
+          <li class="nav_links_list"><a href="contact" style="color: black">CONTACT</a></li>
+        </ul>
       </div>
 
       <div class="header_band">
@@ -23,9 +25,27 @@
     </header>
 
     <main>
-      <h2 class="first_header_style">Info</h2>
-        <p>Currently working. For the time being...</p>
-        <p class="temp_email_address">EMAIL: sean-at-watters.io</p>
+      <h2 class="left_header_style">Info</h2>
+
+
+
+
+  <div class="contact_form">
+
+    <form action="contact.php" method="post" enctype="text/plain">
+            <input name="name" type="text" class="contact_form_cells" id="name" placeholder="Name">
+            <input name="email" type="email" class="contact_form_cells" id="email" placeholder="Email">
+            <input name="subject" type="text" class="contact_form_cells" id="subject" placeholder="Subject">
+       <div>
+            <textarea name="message" rows="5" class="contact_message_cell" id="message" placeholder="Message"></textarea>
+       </div>
+       <div>
+            <input name="submit" type="submit" class="send_button" id="submit" value="Send">
+       </div>
+     </form>
+
+   </div>
+
     </main>
 
     <footer>
