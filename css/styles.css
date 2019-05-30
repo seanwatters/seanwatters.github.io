@@ -35,7 +35,7 @@ a:active {
 
 .header_band {
   z-index: -100;
-  height: 160px; width: 850px; clear: both;
+  height: 160px; clear: both; margin-left: 0%; margin-right: 0%;
   background-color: black; opacity: 0.8; background-clip: border-box; box-shadow: 1px 1px 1px white;
 }
 
@@ -128,7 +128,7 @@ p {
 /* footer */
 .footer_band {
   z-index: -100;
-  height: 375px; margin-top: 200px; clear: both;
+  height: 375px; margin-top: 200px; clear: both; margin-left: 0%; margin-right: 0%;
   background-clip: border-box; box-shadow: 1px 1px 1px white; background: black;
 }
 
