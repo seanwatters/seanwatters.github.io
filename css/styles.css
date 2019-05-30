@@ -165,142 +165,145 @@ p {
 /* phone */
 @media only screen and (max-width : 420px) {
 
-  /* header */
+  a:link {
+    text-decoration: none;
+  }
+  a:visited {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  a:active {
+    text-decoration: underline;
+  }
 
+
+  /* header */
   .name_header {
-    color: black;
-    font-family: "Courier New";
-    font-weight: bold;
-    font-size: 2.8em;
-    position: relative;
-    text-align: center;
-    margin-left: 0;
-    margin-right: 0;
-    top: 0;
-    opacity: 0.9;
+    color: black; font-weight: bold; font-size: 2em;
+    padding-left: 20px; padding-top: 20px; float:left;
   }
 
   .page_navigation_links {
-    top: 0px;
+    z-index: 100;
+    font-family: "Courier New", Courier, monospace; font-weight: 400; font-size: 1.6em; color: black;
+    float:right; margin-top: -10px;
+    padding-bottom: 10px;
+  }
 
-    position: relative;
-    text-align: center;
-    margin-left: 0;
-    margin-right: 0;
-    opacity: 0.9;
+  .nav_links_list {
+    float: left; padding: 10px;
   }
 
   .header_band {
-    z-index: -1;
-    position:absolute;
-    top:100px;
-    height: 200px;
-    background-clip: border-box;
-    width: 100%;
-    box-shadow: 1px 1px 1px white;
-    background-color: black; opacity: 0.79;
+    z-index: -100;
+    height: 160px; width: 850px; clear: both;
+    background-color: black; opacity: 0.8; background-clip: border-box; box-shadow: 1px 1px 1px white;
   }
 
   .title_style {
-    font-size: 4.8em;
-    font-weight: normal;
-    font-family: "Courier New";
-    color: whitesmoke;
-    margin-left: 6.3%;
-    margin-right: 7%;
-    line-height: 0%;
-    padding-top: 50px;
-    -webkit-text-stroke: 2px;
-    float: left;
-    opacity: 0.98;
+    font-size: 80px; font-weight: 100; color: whitesmoke;
+    margin-left: 7%; padding-top: 40px;
   }
 
-  /* main */
+
+
+  /* main*/
+  body {
+    z-index: 100;
+    background-color: white;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    clear: both;
+  }
+
+  h2 {
+    z-index: 100;
+    font-weight: 100; font-size: 3.5em; color: black; line-height: 95%;
+    margin-right: 80px;
+    margin-left: 80px;
+    clear: both;
+  }
+
+  h3 {
+    z-index: 100;
+    font-size: 35px; color: black; line-height: 95%; opacity: 0.75;
+    clear: both;
+  }
+
+  h4 {
+    z-index: 100;
+    font-size: 1.7em; color: black; line-height: 95%;
+    margin-right: 11%; margin-left: 11%;
+    clear: both
+  }
 
   p {
-    z-index: 1;
-    font-size: 1em;
-    font-family: Consolas, monaco, monospace;
-    line-height: 265%;
-    color: black;
-    margin-right: 12%;
-    margin-left: 12%;
-    clear: both;
-    opacity: 0.9;
+    z-index: 100;
+    font-size: 16.5px; font-family: "Courier New", Courier, monospace; line-height: 300%; color: black;
+    margin-right: 12%; margin-left: 12%;
+    max-width: 700px; clear: both;
   }
 
-  .first_header_style {
-    padding-top: 300px;
-    font-size: 2.5em;
-    opacity: 0.9;
-  }
 
-  .first_header_style_home {
-    padding-top: 250px;
-    font-size: 2.5em;
-    float: left;
-    opacity: 0.9;
-  }
-
+  /* specific styling */
   .first_blog_post_style {
-    padding-top: 250px;
-    font-size: 1.6em;
-    opacity: 0.9;
+    padding-top: 120px;
+    font-size: 2em;
   }
 
   .right_header_style {
     float: right;
-    font-size: 2.5em;
-    opacity: 0.9;
+  }
+
+  .right_text_style {
+    float: right;
   }
 
   .left_header_style {
     padding-top: 50px;
-    font-size: 2.5em;
-    opacity: 0.9;
   }
 
-  .first_text_style_home {
-    max-width: 600px;
-    margin-right: 11.5%;
-    opacity: 0.9;
+  .left_text_style {
   }
+
+  .temp_email_address{
+    font-size: 1.5em;
+  }
+
+
+  .medium_home {
+    filter: grayscale(100%); display: block;
+  }
+
+  .twitter_home {
+    filter: grayscale(100%); display: block;
+  }
+
+  .linkedin_home {
+    filter: grayscale(100%); display: block;
+  }
+
 
 
   /* footer */
-
   .footer_band {
-    z-index: -1;
-    width: 100%;
-    height: 300px;
-    background-clip: border-box;
-    box-shadow: 1px 1px 1px white;
-    background: black;
-    margin-top: 100px;
-    clear: both;
-    opacity: 0.9;
-
+    z-index: -100;
+    height: 375px; margin-top: 200px; clear: both;
+    background-clip: border-box; box-shadow: 1px 1px 1px white; background: black;
   }
 
   .social_media_links {
-    padding-top: 50px;
-    color: whitesmoke;
-    text-align: center;
-    font-family: "Courier New";
-    font-size: .85em;
+    margin-left: 30%; padding-top: 25px;
+    color: whitesmoke; font-family: "Courier New", Courier, monospace; font-size: 1em;
   }
 
   .tm{
-
-    z-index: 1;
-    text-align: center;
-    font-size: .5em;
-    font-family: monospace;
-    color: black;
-    width: 100%;
-    margin-bottom: 3px;
-    margin-top: 20px;
-    clear: both;
+    z-index: 100;
+    text-align: center; font-size: .5em; font-family: monospace; color: black;
+    margin-bottom: 3px; margin-top: 20px; clear: both;
   }
 }
 
