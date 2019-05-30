@@ -1,7 +1,5 @@
 /* For desktop: */
-
 /************************/
-
 /* link formating */
 
 a:link {
@@ -17,64 +15,40 @@ a:active {
   text-decoration: underline;
 }
 
-/* header */
 
+/* header */
 .name_header {
-  color: black;
-  padding-left: 20px;
-  padding-top: 20px;
-  font-family: sentenial;
-  font-weight: bold;
-  font-size: 2em;
-  margin-left: auto;
-  margin-right: auto;
+  color: black; font-weight: bold; font-size: 2em;
+  padding-left: 20px; padding-top: 20px; float:left;
 }
 
-
 .page_navigation_links {
-  color: black;
-  margin-right:7%;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 1.6em;
-  left: 500px;
-  position:relative;
-  bottom: 70px;
   z-index: 100;
-  margin-right: 7%;
-  display: inline;
-  font-weight: 400;
+  font-family: "Courier New", Courier, monospace; font-weight: 400; font-size: 1.6em; color: black;
+  float:right; margin-top: -10px;
+  padding-bottom: 5px;
 }
 
 .nav_links_list {
-  float: left;
-  padding: 10px;
+  float: left; padding: 10px;
 }
 
 .header_band {
-  z-index: -1;
-  height: 157px;
-  background-color: black; opacity: 0.79;
-  background-clip: border-box;
-  width: 850px;
-  box-shadow: 1px 1px 1px white;
-  position: relative;
-  bottom: 70px;
+  z-index: -100;
+  height: 160px; width: 850px; clear: both;
+  background-color: black; opacity: 0.8; background-clip: border-box; box-shadow: 1px 1px 1px white;
 }
 
 .title_style {
-  font-size: 80px;
-  font-family: sentenial;
-  font-weight: 100;
-  color: whitesmoke;
-  margin-left: 7%;
-  margin-right: 7%;
-  padding-top: 40px;
+  font-size: 80px; font-weight: 100; color: whitesmoke;
+  margin-left: 7%; padding-top: 40px;
 }
 
-/* main*/
 
+
+/* main*/
 body {
-  z-index: 1;
+  z-index: 100;
   background-color: white;
   max-width: 850px;
   margin-left: auto;
@@ -82,66 +56,38 @@ body {
   clear: both;
 }
 
-main {
-  max-width: 850px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 h2 {
-  z-index: 1;
-  font-family: sentential;
-  font-weight: 100;
-  font-size: 3.5em;
-  padding-bottom: 0px;
-  color: black;
-  line-height: 95%;
+  z-index: 100;
+  font-weight: 100; font-size: 3.5em; color: black; line-height: 95%;
   margin-right: 80px;
   margin-left: 80px;
   clear: both;
 }
 
 h3 {
-  z-index: 1;
-  font-family: sentenial;
-  font-size: 32px;
-  color: black;
-  line-height: 95%;
+  z-index: 100;
+  font-size: 35px; color: black; line-height: 95%; opacity: 0.75;
   clear: both;
-  opacity: 0.75;
-  z-index: -100;
 }
 
 h4 {
-  z-index: 1;
-  font-family: sentenial;
-  font-size: 1.7em;
-  padding-bottom: 0px;
-  color: black;
-  line-height: 95%;
-  margin-right: 11%;
-  margin-left: 11%;
+  z-index: 100;
+  font-size: 1.7em; color: black; line-height: 95%;
+  margin-right: 11%; margin-left: 11%;
   clear: both
 }
 
-
-
 p {
-  z-index: 1;
-  font-size: 16.5px;
-  font-family: "Courier New", Courier, monospace;
-  line-height: 300%;
-  color: black;
-  margin-right: 12%;
-  margin-left: 12%;
-  clear: both;
-  max-width: 700px
+  z-index: 100;
+  font-size: 16.5px; font-family: "Courier New", Courier, monospace; line-height: 300%; color: black;
+  margin-right: 12%; margin-left: 12%;
+  max-width: 700px; clear: both;
 }
 
-/* specific styling */
 
+/* specific styling */
 .first_blog_post_style {
-  padding-top: 80px;
+  padding-top: 120px;
   font-size: 2em;
 }
 
@@ -164,40 +110,51 @@ p {
   font-size: 1.5em;
 }
 
+
+.medium_home {
+  filter: grayscale(100%); display: block;
+}
+
+.twitter_home {
+  filter: grayscale(100%); display: block;
+}
+
+.linkedin_home {
+  filter: grayscale(100%); display: block;
+}
+
+
+
 /* footer */
-
 .footer_band {
-  z-index: -1;
-  width: 100%;
-  height: 400px;
-  background-clip: border-box;
-  box-shadow: 1px 1px 1px white;
-  background: black;
-  margin-top: 200px;
-  clear: both;
-
+  z-index: -100;
+  height: 375px; margin-top: 200px; clear: both;
+  background-clip: border-box; box-shadow: 1px 1px 1px white; background: black;
 }
 
 .social_media_links {
-  padding-top: 50px;
-  color: whitesmoke;
-  text-align: center;
-  font-family: "Courier New", Courier, monospace;
-  font-size: .9em;
+  margin-left: 30%; padding-top: 25px;
+  color: whitesmoke; font-family: "Courier New", Courier, monospace; font-size: 1em;
 }
 
 .tm{
-
-  z-index: 1;
-  text-align: center;
-  font-size: .5em;
-  font-family: monospace;
-  color: black;
-  width: 100%;
-  margin-bottom: 3px;
-  margin-top: 20px;
-  clear: both;
+  z-index: 100;
+  text-align: center; font-size: .5em; font-family: monospace; color: black;
+  margin-bottom: 3px; margin-top: 20px; clear: both;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* tablet */
