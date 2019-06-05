@@ -33,15 +33,24 @@ a:active {
   float: left; padding: 10px;
 }
 
+.external_link_icons {
+  float: left; padding: 10px;
+}
+
 .header_band {
   z-index: -100;
   height: 160px; clear: both; margin-left: 0%; margin-right: 0%;
-  background-color: black; opacity: 0.8; background-clip: border-box; box-shadow: 1px 1px 1px white;
+  background-color: black; opacity: 0.8; background-clip: border-box;
 }
 
 .title_style {
   font-size: 80px; font-weight: 100; color: whitesmoke;
-  margin-left: 7%; padding-top: 40px;
+  margin-left: 7%; padding-top: 40px; margin-right: 7%;
+}
+
+.headshot {
+  width: 300; height: 292;
+  float: left;
 }
 
 
@@ -95,17 +104,6 @@ p {
   float: right;
 }
 
-.right_text_style {
-  float: right;
-}
-
-.left_header_style {
-  padding-top: 50px;
-}
-
-.left_text_style {
-}
-
 .temp_email_address{
   font-size: 1.5em;
 }
@@ -128,16 +126,20 @@ p {
 /* footer */
 .footer_band {
   z-index: -100;
-  height: 375px; margin-top: 200px; clear: both; margin-left: 0%; margin-right: 0%;
-  background-clip: border-box; box-shadow: 1px 1px 1px white; background: black;
+  height: 375px; margin-top: 200px;
+  background-clip: border-box; box-shadow: 5px 5px 5px lightgrey; background: black;
 }
 
 .social_media_links {
-  margin-left: 30%; padding-top: 25px;
-  color: whitesmoke; font-family: "Courier New", Courier, monospace; font-size: 1em;
+  color: whitesmoke; font-family: "Courier New", Courier, monospace; font-size: 15px;
+  padding-top: 60px;
 }
 
-.tm{
+.social_media_li {
+  padding: 10px;
+}
+
+.tm {
   z-index: 100;
   text-align: center; font-size: .5em; font-family: monospace; color: black;
   margin-bottom: 3px; margin-top: 20px; clear: both;
