@@ -40,7 +40,7 @@ a:active {
 .link_icons_ul {
   padding-top: 10px;
   list-style-type: none;
-  margin-bottom: -40px;
+  margin-bottom: -90px;
   float: left;
 }
 
@@ -64,6 +64,7 @@ a:active {
 .headshot {
   width: 300; height: 292;
   float: left;
+  border-radius: 50%;
 }
 
 
