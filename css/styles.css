@@ -62,7 +62,7 @@ a:active {
 }
 
 .headshot {
-  width: 300; height: 292;
+  width: 300; height: auto;
   float: left;
   border-radius: 50%;
 }
@@ -246,10 +246,10 @@ p {
   }
 
   .headshot {
-    width: 300; height: 292;
+    width: 300; height: auto;
     float: none;
     text-align: center;
-    padding-bottom: 30px;
+    margin-bottom: 20px;
   }
 
 
