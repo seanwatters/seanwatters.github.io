@@ -216,7 +216,7 @@ p {
 
   .external_link_icons {
     float: left; padding: 10px;
-    width:27.5px;
+    width:27.5;
   }
 
   .icon_style {
