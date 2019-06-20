@@ -94,7 +94,8 @@ button {
 }
 
 #high-scores {
-	margin-left: 200px;
+	margin-left: 80px;
+	margin-top: -440px;
 }
 
 #score {
@@ -148,6 +149,7 @@ button {
 }
 
 #leaderboard {
+	position: relative;
 	color: #00ff00;
   font-size: 30px;
   text-decoration: none;
@@ -155,8 +157,9 @@ button {
 	margin-bottom: 15px;
 	/* text-align: center; */
 	margin-top: 50px;
-	margin-left: 200px;
+	margin-left: 70px;
 	text-decoration: underline;
+	bottom: 450px;
 }
 
 .high-scores {
