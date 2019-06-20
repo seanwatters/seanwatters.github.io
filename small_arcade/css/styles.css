@@ -7,9 +7,9 @@ a {
 #description {
 	color: #00ff00;
 	font-family: monospace;
-	font-size: 17px;
+	font-size: 15px;
 	float: right;
-	margin-top: -450px;
+	margin-top: -400px;
 	width: 20%;
 }
 
@@ -17,7 +17,7 @@ a {
 	font-family: monospace;
 	text-align: center;
 	color: #00ff00;
-	font-size: 30px;
+	font-size: 40px;
 }
 
 #enter-initials-text {
@@ -57,27 +57,35 @@ header li {
 
 #initials-submit {
 	background: none;
-	border: none;
+	border-color: #00ff00;
 	color: #00ff00;
 	font-family: monospace;
 	font-size: 20px;
 }
 
-header li:not(:last-child):after {
+/* header li:not(:last-child):after {
     content: " | ";
-}
+} */
 
 button:hover {
 	color: #00e600;
+	border-color: #00e600;
+}
+
+a:hover {
+	color: #00e600;
+	text-decoration: underline;
 }
 
 button {
-	padding-top: 10px;
+	border-width: 2px;
+	margin-top: 10px;
 	background: none;
-	border: none;
+	border-color: #00ff00;
 	color: #00ff00;
 	font-family: monospace;
 	font-size: 23px;
+	border-radius: 3px;
 }
 
 .hidden {
@@ -124,6 +132,7 @@ button {
   position: relative;
   text-align: center;
   width: 400px;
+	margin-top: 40px;
 }
 
 #start {
@@ -205,4 +214,18 @@ button {
 	height: 80px;
 	width: 10px;
 	position: absolute;
+}
+
+.page_navigation_links {
+	float:right;
+	margin-top: -55px;
+	margin-right: 40px;
+}
+
+.nav_links_list {
+	background: none;
+	border: none;
+	color: #00ff00;
+	font-family: monospace;
+	font-size: 27px;
 }
