@@ -127,7 +127,8 @@ button {
 	border-color: #00ff00;
 	border-style: dashed;
   height: 400px;
-  margin: 0 auto;
+  margin-right: auto;
+	margin-left: auto;
   overflow: hidden;
   position: relative;
   text-align: center;
