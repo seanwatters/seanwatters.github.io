@@ -56,11 +56,13 @@ header li {
 }
 
 #initials-submit {
+	margin-top: 10px;
 	background: none;
 	border-color: #00ff00;
 	color: #00ff00;
 	font-family: monospace;
 	font-size: 20px;
+	border-radius: 3px;
 }
 
 /* header li:not(:last-child):after {
