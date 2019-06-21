@@ -152,7 +152,7 @@ class Pong {
       }
     }
     scoreArr.sort((a,b) => (a.score < b.score) ? 1 : ((b.score < a.score) ? -1 : 0));
-    scoreArr.length = 7;
+    scoreArr.length = 9;
     this.leaderboard = scoreArr;
     this.displayScores();
   }
@@ -331,7 +331,7 @@ class Pong {
       }
       console.log(scoreArr);
       scoreArr.sort((a,b) => (a.score < b.score) ? 1 : ((b.score < a.score) ? -1 : 0));
-      scoreArr = scoreArr.splice(0, 7);
+      scoreArr = scoreArr.splice(0, 9);
 
       scoreArr.forEach((scr) => {
         let score = document.createElement('li');
