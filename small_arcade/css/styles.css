@@ -11,7 +11,6 @@ a {
 	float: right;
 	margin-top: -300px;
 	width: 20%;
-	margin-right: -10px;
 }
 
 #app-title {
@@ -225,7 +224,7 @@ button {
 .page_navigation_links {
 	float:right;
 	margin-top: -55px;
-	margin-right: 40px;
+	margin-right: 55px;
 }
 
 .nav_links_list {
