@@ -110,11 +110,16 @@ class Rock {
           game.appendChild(enterInitials);
           main.appendChild(game);
 
-
+          let leaderboard = document.createElement('div');
+          leaderboard.id = 'leaderboard';
+          leaderboard.textContent = 'Leaderboard';
 
           let highScores = document.createElement('ol');
           highScores.id = 'high-scores';
+
+          main.appendChild(leaderboard);
           main.appendChild(highScores);
+
 
           loadScores();
 
