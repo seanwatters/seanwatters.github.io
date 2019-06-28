@@ -4,12 +4,14 @@
 
 a:link {
   text-decoration: none;
+  color: darkgrey;
 }
 a:visited {
   text-decoration: none;
+  color:darkgrey;
 }
 a:hover {
-  text-decoration: underline;
+
 }
 a:active {
   text-decoration: underline;
@@ -17,57 +19,113 @@ a:active {
 
 
 /* header */
-.name_header {
+.name-header {
   color: black; font-weight: bold; font-size: 2em;
   padding-left: 20px; padding-top: 20px; float:left;
 }
 
-.page_navigation_links {
+.page-navigation-links {
   z-index: 100;
-  font-family: "Courier New", Courier, monospace; font-weight: 400; font-size: 1.6em; color: black;
+  font-family: "Courier New", Courier, monospace; font-weight: 400; font-size: 30px; color: black;
   float:right; margin-top: -10px;
   padding-bottom: 30px;
 }
 
-.nav_links_list {
-  float: left; padding: 10px;
+a.nav-links:hover, a.nav-links:active {
+  color: grey;
+  font-size: 30px;
 }
 
-.external_link_icons {
+.nav-links-list {
   float: left; padding: 10px;
+  padding-top: 32px;
+  margin-bottom: -25px;
 }
 
-.link_icons_ul {
+#drop-down-icon {
+  float: right;
+  margin-top: 34px;
+  width: 35px;
+  margin-left: 3px;
+  border: none;
+  background: none;
+  margin-right: 20px;
+  padding-bottom: 8px;
+  border-radius: 15%;
+}
+
+#drop-down-icon:hover{
+  background: lightgrey;
+}
+
+button, ul {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+#drop-down-list {
+  list-style-type: none;
+  text-align: right;
+  margin-right: 20px;
+  margin-bottom: -20px;
+  /* margin-top: -40px; */
+}
+
+.drop-down-element {
+  font-size: 23px;
+}
+
+.drop-down-element:hover {
+  color: black;
+}
+
+.icon-lines {
+  margin-bottom: -.5px;
+}
+
+.icon-lines:hover{
+  color:blue;
+}
+
+.external-link-icons {
+  float: left; padding: 7px;
+}
+
+.link-icons-ul {
   padding-top: 10px;
   list-style-type: none;
-  margin-bottom: -90px;
+  margin-bottom: -100px;
   float: left;
+  margin-left: 65px;
 }
 
-.icon_style {
-  height: 40;
-  width: 42;
+.icon-style {
+  filter: grayscale(100%);
+  opacity: 0.5;
+  height: 27;
+  width: 29;
 }
 
-.header_band {
+.header-band {
   z-index: -100;
   height: 180px;
   background-color: black; opacity: 0.8; background-clip: border-box;
   clear: both;
 }
 
-.title_style {
+.title-style {
   font-size: 80px; font-weight: 100; color: whitesmoke;
   margin-left: 7%; padding-top: 40px; margin-right: 7%;
 }
 
 .headshot {
-  width: 300; height: auto;
+  width: 150; height: auto;
   float: left;
   border-radius: 50%;
+  margin-top: 25px;
 }
 
-.blog_post_medium_icon {
+.blog-post-medium-icon {
   padding-top: 20px;
   list-style-type: none;
   margin-left: 30px;
@@ -118,49 +176,49 @@ p {
 
 
 /* specific styling */
-.first_blog_post_style {
+.first-blog-post-style {
   padding-top: 120px;
   font-size: 2em;
 }
 
-.right_header_style {
+.right-header-style {
   float: right;
 }
 
-.temp_email_address{
+.temp-email-address{
   font-size: 1.5em;
 }
 
 
-.medium_home {
+.medium-home {
   filter: grayscale(100%); display: block;
 }
 
-.twitter_home {
+.twitter-home {
   filter: grayscale(100%); display: block;
 }
 
-.linkedin_home {
+.linkedin-home {
   filter: grayscale(100%); display: block;
 }
 
 
 
 /* footer */
-.footer_band {
+.footer-band {
   z-index: -100;
-  height: 375px; margin-top: 200px;
+  height: 375px; margin-top: 150px;
   background-clip: border-box; box-shadow: 5px 5px 5px lightgrey; background: black;
   clear: both;
 }
 
-.social_media_links {
+.social-media-links {
   color: whitesmoke; font-family: "Courier New", Courier, monospace; font-size: 15px;
   padding-top: 60px;
   margin-left: 30%;
 }
 
-.social_media_li {
+.social-media-li {
   padding: 10px;
 }
 
@@ -208,33 +266,33 @@ p {
 
 
   /* header */
-  .name_header {
+  .name-header {
     color: black; font-weight: bold; font-size: 2em;
     padding-left: 20px; padding-top: 20px; margin-bottom: -20px;
   }
 
-  .page_navigation_links {
+  .page-navigation-links {
     z-index: 100;
     font-family: "Courier New", Courier, monospace; font-weight: 400; font-size: 22px;
 
     float:left; margin-top: 0px; margin-left: -30px;padding-bottom: 30px;
   }
 
-  .nav_links_list {
+  .nav-links-list {
     float: left; padding-right: 10px;
   }
 
-  .external_link_icons {
+  .external-link-icons {
     float: left; padding: 10px;
     width:27.5;
   }
 
-  .icon_style {
+  .icon-style {
     height: 34;
     width: 36;
   }
 
-  .link_icons_ul {
+  .link-icons-ul {
     padding-top: 30px;
     list-style-type: none;
     float: left;
@@ -242,14 +300,14 @@ p {
     margin-bottom: -50px;
   }
 
-  .header_band {
+  .header-band {
     z-index: -100;
     height: 200px;
     background-color: black; opacity: 0.8; background-clip: border-box;
     clear: both;
   }
 
-  .title_style {
+  .title-style {
     font-size: 100px; font-weight: 100; color: whitesmoke;
     margin-left: 7%; padding-top: 40px; margin-right: 7%;
   }
@@ -303,49 +361,49 @@ p {
 
 
   /* specific styling */
-  .first_blog_post_style {
+  .first-blog-post-style {
     padding-top: 120px;
     font-size: 2em;
   }
 
-  .right_header_style {
+  .right-header-style {
     float: right;
   }
 
-  .temp_email_address{
+  .temp-email-address{
     font-size: 1.5em;
   }
 
 
-  .medium_home {
+  .medium-home {
     filter: grayscale(100%); display: block;
   }
 
-  .twitter_home {
+  .twitter-home {
     filter: grayscale(100%); display: block;
   }
 
-  .linkedin_home {
+  .linkedin-home {
     filter: grayscale(100%); display: block;
   }
 
 
 
   /* footer */
-  .footer_band {
+  .footer-band {
     z-index: -100;
     height: 375px; margin-top: 200px;
     background-clip: border-box; box-shadow: 5px 5px 5px lightgrey; background: black;
     clear: both;
   }
 
-  .social_media_links {
+  .social-media-links {
     color: whitesmoke; font-family: "Courier New", Courier, monospace; font-size: 15px;
     padding-top: 60px;
     margin-left: 5%;
   }
 
-  .social_media_li {
+  .social-media-li {
     padding: 10px;
   }
 
@@ -356,11 +414,11 @@ p {
   }
 }
 
-.contact_form {
+.contact-form {
   text-align: center;
 }
 
-.contact_form_cells {
+.contact-form-cells {
   height: 40px;
   border: 2px solid whitesmoke;
   box-shadow: none;
@@ -372,11 +430,11 @@ p {
   font-family: monospace;
 }
 
-.contact_form_cells:hover {
+.contact-form-cells:hover {
   border-color: darkgrey;
 }
 
-.contact_message_cell {
+.contact-message-cell {
   height: 200px;
   border: 2px solid whitesmoke;
   box-shadow: none;
@@ -388,11 +446,11 @@ p {
   font-family: monospace;
 }
 
-.contact_message_cell:hover {
+.contact-message-cell:hover {
   border-color: darkgrey;
 }
 
-.send_button {
+.send-button {
   font-size: 1.5em;
   border-radius: 10px;
   height: 65px;
@@ -404,7 +462,7 @@ p {
   color: whitesmoke;
 }
 
-.send_button:hover{
+.send-button:hover{
   background-color: lightgrey;
   color: gray;
 }
