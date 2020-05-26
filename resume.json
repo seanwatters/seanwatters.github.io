@@ -1,0 +1,139 @@
+{
+  "selectedTemplate": 6,
+  "headings": {
+    "work": "EXPERIENCE",
+    "skills": "SKILLS",
+    "projects": "PUBLICATIONS",
+    "awards": "Publications",
+    "education": "EDUCATION"
+  },
+  "basics": {
+    "name": "Sean Watters",
+    "email": "sean@watters.io",
+    "phone": "3605909021",
+    "location": {
+      "address": "Phoenix, AZ"
+    },
+    "website": "seanwatters.io"
+  },
+  "education": [
+    {
+      "institution": "Arizona State University",
+      "area": "Computer Science",
+      "startDate": "2018",
+      "gpa": "",
+      "location": "Tempe, AZ",
+      "endDate": "2019"
+    }
+  ],
+  "work": [
+    {
+      "company": "Nikola Motor Company",
+      "location": "Phoenix, AZ",
+      "position": "Software Engineer",
+      "website": "",
+      "endDate": "Present",
+      "highlights": [
+        "Selected new front-end framework for vehicle infotainment systems, dramatically improving UX responsiveness and reducing memory consumption by 30%",
+        "Optimized JavaScript code to support WebGL animation at 40fps and simultaneous updates to UI at 10x a second from data streamed over websocket",
+        "Implemented custom turn by turn navigation / routing system on top of Mapbox GL JS",
+        "Added test automation and static analysis to our continuous integration pipeline, resulting in higher change confidence and faster software delivery"
+      ],
+      "startDate": "August 2019"
+    },
+    {
+      "highlights": [
+        "Developed processes for reporting Vehicle Repair Team’s response time to customers—establishing the correlation of response time and overall cost",
+        "Decreased losses due to delay in response by splitting the team—one group to focus on expediting smaller claims and the other designated to resolve lengthier, higher impact claims"
+      ],
+      "company": "Carvana",
+      "position": "Post-Sale Operations I & II",
+      "location": "Tempe, AZ",
+      "startDate": "October 2017",
+      "endDate": "April 2019"
+    }
+  ],
+  "skills": [
+    {
+      "level": "",
+      "keywords": [
+        "Adept at reasoning about technical challenges and solutions",
+        "Highly proficient at navigating ambiguous / loosely defined problems",
+        "Self sufficient—excellent at independent problem solving"
+      ]
+    },
+    {
+      "keywords": [
+        "Object-oriented programming, data structures, and algorithm design"
+      ],
+      "name": "Technical"
+    },
+    {
+      "keywords": [
+        "JavaScript",
+        "TypeScript",
+        "Ruby",
+        "Java"
+      ],
+      "name": "Languages"
+    },
+    {
+      "keywords": [
+        "Vue.js",
+        "React.js",
+        "React Native",
+        "Rails",
+        "Flutter"
+      ],
+      "name": "Frameworks"
+    },
+    {
+      "keywords": [
+        "Jest",
+        "Cypress",
+        "Vuex",
+        "MobX",
+        "Redux",
+        "Webpack",
+        "Rollup"
+      ],
+      "name": "Other Technologies"
+    },
+    {
+      "keywords": [
+        "GitHub",
+        "GitLab",
+        "NPM"
+      ],
+      "name": "Source Control"
+    }
+  ],
+  "projects": [
+    {
+      "keywords": [
+        ""
+      ],
+      "name": "Staying Focused and Understanding Trade-offs",
+      "description": "Published in Better Programming, May 20, 2019"
+    },
+    {
+      "keywords": [
+        ""
+      ],
+      "name": "(Series) Explaining React Navigation 4",
+      "description": "Published in Better Programming and The Startup, November 3 - November 13, 2019"
+    }
+  ],
+  "awards": [
+    {}
+  ],
+  "sections": [
+    "templates",
+    "profile",
+    "work",
+    "skills",
+    "projects",
+    "awards",
+    "education"
+  ]
+}
