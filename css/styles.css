@@ -2,16 +2,19 @@
 /************************/
 /* link formating */
 
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: white;
+}
+
 a:link {
   text-decoration: none;
-  color: darkgrey;
+  color: black;
 }
 a:visited {
   text-decoration: none;
-  color:darkgrey;
-}
-a:hover {
-
+  color: black;
 }
 a:active {
   text-decoration: underline;
@@ -19,110 +22,47 @@ a:active {
 
 
 /* header */
+.pre-band {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 55%;
+  min-width: 750px;
+  margin:auto;
+  margin-top: 20px;
+}
 .name-header {
-  color: black; font-weight: bold; font-size: 2em;
-  padding-left: 20px; padding-top: 20px; float:left;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 17px;
+  font-weight: 600;
 }
-
-.page-navigation-links {
-  z-index: 100;
-  font-family: "Courier New", Courier, monospace; font-weight: 400; font-size: 30px; color: black;
-  float:right; margin-top: -10px;
-  padding-bottom: 30px;
-}
-
-a.nav-links:hover, a.nav-links:active {
-  color: grey;
-  font-size: 30px;
-}
-
-.nav-links-list {
-  float: left; padding: 10px;
-  padding-top: 32px;
-  margin-bottom: -25px;
-}
-
-#drop-down-icon {
-  float: right;
-  margin-top: 34px;
-  width: 35px;
-  margin-left: 3px;
-  border: none;
-  background: none;
-  margin-right: 20px;
-  padding-bottom: 8px;
-  border-radius: 15%;
-}
-
-#drop-down-icon:hover{
-  background: lightgrey;
-}
-
-button, ul {
-  margin-top: 0;
-  padding-top: 0;
-}
-
-#drop-down-list {
-  list-style-type: none;
-  text-align: right;
-  margin-right: 20px;
-  margin-bottom: -20px;
-  /* margin-top: -40px; */
-}
-
-.drop-down-element {
+.nav-links {
+  width: 260px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Courier New", Courier, monospace;
   font-size: 23px;
 }
 
-.drop-down-element:hover {
-  color: black;
+.external-icons {
+  margin: auto;
+  margin-top: 45px;
+  max-width: 25%;
+  min-width: 370px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: -10px;
+}
+.external-icon {
+  font-size: 35px;
 }
 
-.icon-lines {
-  margin-bottom: -.5px;
-}
-
-.icon-lines:hover{
-  color:blue;
-}
-
-.external-link-icons {
-  float: left; padding: 7px;
-}
-
-.link-icons-ul {
-  padding-top: 10px;
-  list-style-type: none;
-  margin-bottom: -100px;
-  float: left;
-  margin-left: 65px;
-}
-
-.icon-style {
-  filter: grayscale(100%);
-  opacity: 0.5;
-  height: 27;
-  width: 29;
-}
-
-.header-band {
-  z-index: -100;
-  height: 180px;
-  background-color: black; opacity: 0.8; background-clip: border-box;
-  clear: both;
-}
-
-.title-style {
-  font-size: 80px; font-weight: 100; color: whitesmoke;
-  margin-left: 7%; padding-top: 40px; margin-right: 7%;
-}
-
-.headshot {
-  width: 150; height: auto;
-  float: left;
-  border-radius: 50%;
-  margin-top: 25px;
+.page-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .blog-post-medium-icon {
@@ -130,116 +70,84 @@ button, ul {
   list-style-type: none;
   margin-left: 30px;
   opacity: .9;
-
 }
 
-
-
-/* main*/
-body {
-  z-index: 100;
-  background-color: white;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-  clear: both;
+h1 {
+  font-size: 30px;
+  font-weight: 100;
+  color: black;
+  font-family: monospace;
 }
 
 h2 {
   z-index: 100;
-  font-weight: 100; font-size: 3.5em; color: black; line-height: 95%;
+  font-weight: 100;
+  font-size: 3.5em;
+  color: black;
+  line-height: 95%;
   margin-right: 95px;
   margin-left: 95px;
   float: left;
   clear: both;
 }
-
 h3 {
-  z-index: 100;
-  font-size: 35px; color: black; line-height: 95%; opacity: 0.75;
+  margin: auto;
+  margin-top: 30px;
+  max-width: 50%;
+  min-width: 740px;
+  font-size: 20px;
+  color: black;
+  line-height: 120%;
+  font-family: "Courier New", Courier, monospace;
   clear: both;
 }
-
 h4 {
   z-index: 100;
-  font-size: 1.7em; color: black; line-height: 95%;
-  margin-right: 11%; margin-left: 11%;
+  font-size: 1.7em;
+  color: black;
+  line-height: 95%;
+  margin-right: 11%;
+  margin-left: 11%;
   clear: both
 }
-
 p {
-  z-index: 100;
-  font-size: 16.5px; font-family: "Courier New", Courier, monospace; line-height: 300%; color: black;
-  margin-right: 12%; margin-left: 12%;
-  max-width: 800px; clear: both;
+  font-size: 16px;
+  font-family: "Courier New", Courier, monospace;
+  line-height: 250%;
+  color: black;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  max-width: 50%;
+  min-width: 740px;
 }
 
-
-/* specific styling */
-.first-blog-post-style {
-  padding-top: 120px;
-  font-size: 2em;
-}
-
-.right-header-style {
-  float: right;
-}
-
-.temp-email-address{
-  font-size: 1.5em;
-}
-
-
-.medium-home {
-  filter: grayscale(100%); display: block;
-}
-
-.twitter-home {
-  filter: grayscale(100%); display: block;
-}
-
-.linkedin-home {
-  filter: grayscale(100%); display: block;
-}
-
-
-
-/* footer */
 .footer-band {
-  z-index: -100;
-  height: 375px; margin-top: 150px;
-  background-clip: border-box; box-shadow: 5px 5px 5px lightgrey; background: black;
-  clear: both;
+  height: 140px;
+  margin-top: 100px;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
-
-.social-media-links {
-  color: whitesmoke; font-family: "Courier New", Courier, monospace; font-size: 15px;
-  padding-top: 60px;
-  margin-left: 30%;
+.footer-external-icons {
+  width: 250px;
+  display: flex;
+  justify-content: space-around;
 }
-
-.social-media-li {
-  padding: 10px;
+.footer-external-icon {
+  font-size: 20px;
+  color: whitesmoke;
 }
-
 .tm {
-  z-index: 100;
-  text-align: center; font-size: .5em; font-family: monospace; color: black;
-  margin-bottom: 3px; margin-top: 20px; clear: both;
+  text-align: center;
+  font-size: 12px;
+  font-family: monospace;
+  color: whitesmoke;
+  margin-bottom: 3px;
+  margin-top: 20px; clear: both;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* tablet */
@@ -249,228 +157,37 @@ p {
 
 /* phone */
 @media only screen and (max-width : 420px) {
-  /* link formating */
-
-  a:link {
-    text-decoration: none;
+  .pre-band {
+    height: 60px;
+    flex-direction: column;
+    max-width: 90%;
+    min-width: 90%;
   }
-  a:visited {
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-  a:active {
-    text-decoration: underline;
-  }
-
-
-  /* header */
   .name-header {
-    color: black; font-weight: bold; font-size: 2em;
-    padding-left: 20px; padding-top: 20px; margin-bottom: -20px;
+    font-size: 16px;
   }
-
-  .page-navigation-links {
-    z-index: 100;
-    font-family: "Courier New", Courier, monospace; font-weight: 400; font-size: 22px;
-
-    float:left; margin-top: 0px; margin-left: -30px;padding-bottom: 30px;
+  .external-icons {
+    margin: auto;
+    margin-top: 50px;
+    max-width: 72.5%;
+    min-width: 72.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0px;
   }
-
-  .nav-links-list {
-    float: left; padding-right: 10px;
+  .external-icon {
+    font-size: 27.5px;
   }
-
-  .external-link-icons {
-    float: left; padding: 10px;
-    width:27.5;
+  h1 {
+    font-size: 25px;
   }
-
-  .icon-style {
-    height: 34;
-    width: 36;
-  }
-
-  .link-icons-ul {
-    padding-top: 30px;
-    list-style-type: none;
-    float: left;
-    margin-left: -25px;
-    margin-bottom: -50px;
-  }
-
-  .header-band {
-    z-index: -100;
-    height: 200px;
-    background-color: black; opacity: 0.8; background-clip: border-box;
-    clear: both;
-  }
-
-  .title-style {
-    font-size: 100px; font-weight: 100; color: whitesmoke;
-    margin-left: 7%; padding-top: 40px; margin-right: 7%;
-  }
-
-  .headshot {
-    width: 100; height: auto;
-    float: none;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-
-
-
-  /* main*/
-  body {
-    z-index: 100;
-    background-color: white;
-    max-width: 850px;
-    margin-left: auto;
-    margin-right: auto;
-    clear: both;
-  }
-
-  h2 {
-    z-index: 100;
-    font-weight: 100; font-size: 3.5em; color: black; line-height: 95%;
-    margin-right: 40px;
-    margin-left: 20px;
-    clear: both;
-  }
-
-  h3 {
-    z-index: 100;
-    font-size: 35px; color: black; line-height: 95%; opacity: 0.75;
-    clear: both;
-  }
-
-  h4 {
-    z-index: 100;
-    font-size: 1.7em; color: black; line-height: 95%;
-    margin-right: 11%; margin-left: 11%;
-    clear: both
-  }
-
   p {
-    z-index: 100;
-    font-size: 16.5px; font-family: "Courier New", Courier, monospace; line-height: 300%; color: black;
-    margin-right: 5%; margin-left: 5%;
-    max-width: 700px; clear: both;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 200%;
+    max-width: 87%;
+    min-width: 87%;
   }
-
-
-  /* specific styling */
-  .first-blog-post-style {
-    padding-top: 120px;
-    font-size: 2em;
-  }
-
-  .right-header-style {
-    float: right;
-  }
-
-  .temp-email-address{
-    font-size: 1.5em;
-  }
-
-
-  .medium-home {
-    filter: grayscale(100%); display: block;
-  }
-
-  .twitter-home {
-    filter: grayscale(100%); display: block;
-  }
-
-  .linkedin-home {
-    filter: grayscale(100%); display: block;
-  }
-
-
-
-  /* footer */
-  .footer-band {
-    z-index: -100;
-    height: 375px; margin-top: 200px;
-    background-clip: border-box; box-shadow: 5px 5px 5px lightgrey; background: black;
-    clear: both;
-  }
-
-  .social-media-links {
-    color: whitesmoke; font-family: "Courier New", Courier, monospace; font-size: 15px;
-    padding-top: 60px;
-    margin-left: 5%;
-  }
-
-  .social-media-li {
-    padding: 10px;
-  }
-
-  .tm {
-    z-index: 100;
-    text-align: center; font-size: .5em; font-family: monospace; color: black;
-    margin-bottom: 3px; margin-top: 20px; clear: both;
-  }
-}
-
-.contact-form {
-  text-align: center;
-}
-
-.contact-form-cells {
-  height: 40px;
-  border: 2px solid whitesmoke;
-  box-shadow: none;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 1.5em;
-  width: 22%;
-  border-radius: 6px;
-  font-family: monospace;
-}
-
-.contact-form-cells:hover {
-  border-color: darkgrey;
-}
-
-.contact-message-cell {
-  height: 200px;
-  border: 2px solid whitesmoke;
-  box-shadow: none;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 1.5em;
-  width: 66.5%;
-  border-radius: 6px;
-  font-family: monospace;
-}
-
-.contact-message-cell:hover {
-  border-color: darkgrey;
-}
-
-.send-button {
-  font-size: 1.5em;
-  border-radius: 10px;
-  height: 65px;
-  width: 66.5%;
-  border: none;
-  background: darkgrey;
-  font-family: monospace;
-  text-align: center;
-  color: whitesmoke;
-}
-
-.send-button:hover{
-  background-color: lightgrey;
-  color: gray;
-}
-
-input:focus,
-select:focus,
-textarea:focus,
-button:focus {
-    outline: none;
-    border-color: darkgrey;
 }
