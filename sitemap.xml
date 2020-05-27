@@ -9,18 +9,24 @@
 
 <url>
   <loc>http://seanwatters.io/</loc>
-  <lastmod>2019-06-06T15:57:13+00:00</lastmod>
+  <lastmod>2020-05-27T00:22:58+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>http://seanwatters.io/index</loc>
-  <lastmod>2019-06-06T15:57:13+00:00</lastmod>
+  <lastmod>2020-05-27T00:22:58+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://seanwatters.io/blog</loc>
-  <lastmod>2019-06-06T15:57:13+00:00</lastmod>
+  <lastmod>2020-05-27T00:22:58+00:00</lastmod>
   <priority>0.80</priority>
 </url>
+<url>
+  <loc>http://seanwatters.io/resume</loc>
+  <lastmod>2020-05-27T00:22:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
 
 </urlset>
