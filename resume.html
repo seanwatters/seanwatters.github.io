@@ -68,6 +68,16 @@
         })
         .catch(err => console.log(err))
     </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167813886-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-167813886-1');
+    </script>
+
   </head>
 
   <style>
@@ -76,11 +86,7 @@
       width: 50%;
     }
     ul {
-      margin: auto;
-      width: 85%;
-      font-size: 16px;
-      font-family: "Courier New", Courier, monospace;
-      line-height: 150%;
+      width: 60%;
     }
     p {
       margin-top: 0px;

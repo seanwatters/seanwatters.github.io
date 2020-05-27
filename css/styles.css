@@ -121,6 +121,13 @@ p {
   max-width: 50%;
   min-width: 740px;
 }
+ul {
+  margin: auto;
+  width: 40%;
+  font-size: 16px;
+  font-family: "Courier New", Courier, monospace;
+  line-height: 150%;
+}
 
 .footer-band {
   height: 140px;
