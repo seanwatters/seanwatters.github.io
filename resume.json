@@ -98,6 +98,23 @@
         "NPM"
       ],
       "name": "Source Control"
+    },
+    {
+      "keywords": [
+        "Lambda",
+        "DynamoDB",
+        "S3"
+      ],
+      "name": "AWS"
+    },
+    {
+      "keywords": [
+        "SQLite",
+        "PostgreSQL",
+        "AsyncStorage",
+        "IndexDB"
+      ],
+      "name": "Database"
     }
   ],
   "projects": [
