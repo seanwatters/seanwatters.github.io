@@ -81,18 +81,6 @@
     },
     {
       "keywords": [
-        "Jest",
-        "Cypress",
-        "Vuex",
-        "MobX",
-        "Redux",
-        "Webpack",
-        "Rollup"
-      ],
-      "name": "Other Technologies"
-    },
-    {
-      "keywords": [
         "GitHub",
         "GitLab",
         "NPM"
@@ -115,6 +103,18 @@
         "IndexDB"
       ],
       "name": "Database"
+    },
+    {
+      "keywords": [
+        "Jest",
+        "Cypress",
+        "Vuex",
+        "MobX",
+        "Redux",
+        "Webpack",
+        "Rollup"
+      ],
+      "name": "Other Technologies"
     }
   ],
   "projects": [
@@ -133,16 +133,10 @@
       "description": "Published in Better Programming and The Startup, November 3 - November 13, 2019"
     }
   ],
-  "awards": [
-    {}
-  ],
   "sections": [
-    "templates",
-    "profile",
     "work",
     "skills",
     "projects",
-    "awards",
     "education"
   ]
 }
