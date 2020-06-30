@@ -25,7 +25,7 @@
       "website": "",
       "endDate": "Present",
       "highlights": [
-        "Improved UX responsiveness and reducing memory consumption by 30% by selecting new front-end framework for vehicle infotainment systems",
+        "Improved UX responsiveness and reduced memory consumption by 30% by selecting new front-end framework for vehicle infotainment systems",
         "Optimized JavaScript code to support WebGL animation and updates to UI at 10x a second from data streamed over websocket",
         "Implemented custom turn by turn navigation and routing system on top of Mapbox GL JS",
         "Added test automation and static analysis to our continuous integration pipeline, resulting in higher change confidence and faster software delivery",
