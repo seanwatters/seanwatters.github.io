@@ -55,7 +55,7 @@
         "Data Structures",
         "Algorithm Design"
       ],
-      "name": "Technical"
+      "name": "Basic"
     },
     {
       "keywords": [
@@ -90,19 +90,13 @@
     },
     {
       "keywords": [
-        "Lambda",
-        "DynamoDB",
-        "S3"
-      ],
-      "name": "AWS"
-    },
-    {
-      "keywords": [
         "SQLite",
         "PostgreSQL",
         "AsyncStorage",
         "IndexDB",
-        "NoSQL"
+        "NoSQL",
+        "AWS DynamoDB",
+        "AWS S3"
       ],
       "name": "Database"
     },
@@ -116,7 +110,8 @@
         "Webpack",
         "Rollup",
         "GraphQL",
-        "REST"
+        "REST",
+        "AWS Lambda"
       ],
       "name": "Other Technical"
     }

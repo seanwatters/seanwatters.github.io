@@ -13,6 +13,7 @@
         .then(res => res.json())
         .then(data => {
           const work = data.work
+          const projects = data.projects
           const skills = data.skills
           const publications = data.projects
           const education = data.education
@@ -45,10 +46,51 @@
             experienceRoot.appendChild(highlightsUl)
 
           })
+
+          const projectsRoot = document.getElementById('projects')
+          projects.forEach(project => {
+            const title = document.createElement('h1')
+            const location = document.createElement('p')
+            const url = document.createElement('a')
+            url.href = project.url
+            const highlightsUl = document.createElement('ul')
+            const technologies = document.createElement('p')
+
+            technologies.textContent = 'Technologies:'
+            title.textContent = project.name
+            location.textContent = project.description
+            location.className += 'education-description'
+            url.textContent = project.url.replace(/https:\/\//, '')
+            title.className += 'title'
+            project.technologies.forEach(highlight => {
+              const newHighlight = document.createElement('li')
+              newHighlight.textContent = highlight
+              highlightsUl.appendChild(newHighlight)
+            })
+
+            technologies.appendChild(highlightsUl)
+
+            projectsRoot.appendChild(title)
+            projectsRoot.appendChild(url)
+            projectsRoot.appendChild(location)
+            projectsRoot.appendChild(technologies)
+
+          })
+
           const skillsRoot = document.getElementById('skills')
           skills.forEach(skill => {
             const newSkill = document.createElement('p')
-            newSkill.textContent = `${(skill.name ? skill.name :  '') + (skill.name ? ':' : '')} ${skill.keywords.map(keyword => ' ' + keyword)}`
+            const newSkillList = document.createElement('ul')
+
+            newSkill.textContent = `${(skill.name ? skill.name :  '') + (skill.name ? ':' : '')}`
+
+            skill.keywords.forEach(keyword => {
+              const keywordEl = document.createElement('li')
+              keywordEl.textContent = keyword
+              newSkillList.appendChild(keywordEl)
+            })
+
+            newSkill.appendChild(newSkillList)
             skillsRoot.appendChild(newSkill)
           })
           const educationRoot = document.getElementById('education')
@@ -56,16 +98,20 @@
             const institutionName = document.createElement('h1')
             const timeAtSchool = document.createElement('p')
             const areaOfStudy = document.createElement('p')
+            const description = document.createElement('p')
             areaOfStudy.className += 'area-of-study'
             institutionName.className += 'title'
+            description.className += 'education-description'
 
             institutionName.textContent = institution.institution
             timeAtSchool.textContent = `${institution.location} ${institution.startDate} - ${institution.endDate}`
             areaOfStudy.textContent = institution.area
+            description.textContent = institution.description
 
             educationRoot.appendChild(institutionName)
             educationRoot.appendChild(areaOfStudy)
             educationRoot.appendChild(timeAtSchool)
+            educationRoot.appendChild(description)
           })
         })
         .catch(err => console.log(err))
@@ -85,18 +131,36 @@
   <style>
     .resume-body {
       margin: auto;
-      width: 50%;
+      width: 55%;
+    }
+    .education-description {
+      margin-top: 15px;
+      margin-bottom: 15px;
+      font-size: 14px;
+      margin-left: 8%;
+    }
+    a {
+      font-family: monospace;
+      margin-left: 5%;
+      text-decoration: underline !important;
     }
     ul {
-      width: 60%;
+      width: 85%;
+      margin-bottom: 30px;
+    }
+    li {
+      margin-top: 7px;
+      margin-bottom: 7px;
+      font-size: 14px;
     }
     p {
-      margin-top: 0px;
       margin-bottom: 0px;
+      margin-top: 0px;
       line-height: 200%;
+      margin-left: 5%;
     }
     .job-position {
-      margin-top: 15px;
+      margin-top: 20px;
       font-weight: 600;
     }
     .area-of-study {
@@ -105,6 +169,11 @@
     .title {
       font-weight: 600;
       font-size: 18px;
+      margin-left: 5%;
+      margin-top: 40px;
+    }
+    .section {
+      margin-bottom: 70px;
     }
 
     @media only screen and (max-width : 420px) {
@@ -166,14 +235,17 @@
 
     <main>
       <div class="resume-body">
-        <div id="experience">
+        <div id="experience" class="section">
           <h1>experience</h1>
         </div>
-        <div id="skills">
-          <h1>skills</h1>
+        <div id="projects" class="section">
+          <h1>projects</h1>
         </div>
-        <div id="education">
+        <div id="education" class="section">
           <h1>education</h1>
+        </div>
+        <div id="skills" class="section">
+          <h1>skills</h1>
         </div>
       </div>
     </main>
