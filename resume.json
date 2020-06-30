@@ -1,29 +1,20 @@
 {
-  "selectedTemplate": 6,
-  "headings": {
-    "work": "EXPERIENCE",
-    "skills": "SKILLS",
-    "projects": "PUBLICATIONS",
-    "awards": "Publications",
-    "education": "EDUCATION"
-  },
-  "basics": {
-    "name": "Sean Watters",
-    "email": "sean@watters.io",
-    "phone": "3605909021",
-    "location": {
-      "address": "Phoenix, AZ"
-    },
-    "website": "seanwatters.io"
-  },
   "education": [
     {
       "institution": "Arizona State University",
       "area": "Computer Science",
       "startDate": "2018",
-      "gpa": "",
       "location": "Tempe, AZ",
-      "endDate": "2019"
+      "endDate": "2019",
+      "description": "Attended for Computer Science from 2018 - 2019. Prior experience with web technologies and software development provided an opportunity to join industry early."
+    },
+    {
+      "institution": "Chandler Gilbert Community College",
+      "area": "Engineering",
+      "startDate": "2016",
+      "location": "Chandler, AZ",
+      "endDate": "2017",
+      "description": "Attended full time senior year of high school."
     }
   ],
   "work": [
@@ -34,10 +25,12 @@
       "website": "",
       "endDate": "Present",
       "highlights": [
-        "Selected new front-end framework for vehicle infotainment systems, dramatically improving UX responsiveness and reducing memory consumption by 30%",
-        "Optimized JavaScript code to support WebGL animation at 40fps and simultaneous updates to UI at 10x a second from data streamed over websocket",
-        "Implemented custom turn by turn navigation / routing system on top of Mapbox GL JS",
-        "Added test automation and static analysis to our continuous integration pipeline, resulting in higher change confidence and faster software delivery"
+        "Improved UX responsiveness and reducing memory consumption by 30% by selecting new front-end framework for vehicle infotainment systems",
+        "Optimized JavaScript code to support WebGL animation and updates to UI at 10x a second from data streamed over websocket",
+        "Implemented custom turn by turn navigation and routing system on top of Mapbox GL JS",
+        "Added test automation and static analysis to our continuous integration pipeline, resulting in higher change confidence and faster software delivery",
+        "Reviewed pull requests and established clear coding conventions / guidelines",
+        "Wrote unit, integration and E2E tests in popular JavaScript testing frameworks"
       ],
       "startDate": "August 2019"
     },
@@ -56,7 +49,11 @@
   "skills": [
     {
       "keywords": [
-        "Object-oriented programming, data structures, and algorithm design"
+        "User Interface Design",
+        "Front-end Development",
+        "Object-oriented Programming",
+        "Data Structures",
+        "Algorithm Design"
       ],
       "name": "Technical"
     },
@@ -65,17 +62,21 @@
         "JavaScript",
         "TypeScript",
         "Ruby",
-        "Java"
+        "Java",
+        "Node.js",
+        "HTML",
+        "CSS"
       ],
       "name": "Languages"
     },
     {
       "keywords": [
         "Vue.js",
-        "React.js",
+        "React.js (Next.js, GatsbyJS, Preact)",
         "React Native",
         "Rails",
-        "Flutter"
+        "Flutter",
+        "Svelte"
       ],
       "name": "Frameworks"
     },
@@ -100,7 +101,8 @@
         "SQLite",
         "PostgreSQL",
         "AsyncStorage",
-        "IndexDB"
+        "IndexDB",
+        "NoSQL"
       ],
       "name": "Database"
     },
@@ -110,33 +112,25 @@
         "Cypress",
         "Vuex",
         "MobX",
-        "Redux",
+        "Redux.js",
         "Webpack",
-        "Rollup"
+        "Rollup",
+        "GraphQL",
+        "REST"
       ],
-      "name": "Other Technologies"
+      "name": "Other Technical"
     }
   ],
   "projects": [
     {
-      "keywords": [
-        ""
+      "technologies": [
+        "React.js",
+        "React Native",
+        "Vue.js"
       ],
-      "name": "Staying Focused and Understanding Trade-offs",
-      "description": "Published in Better Programming, May 20, 2019"
-    },
-    {
-      "keywords": [
-        ""
-      ],
-      "name": "(Series) Explaining React Navigation 4",
-      "description": "Published in Better Programming and The Startup, November 3 - November 13, 2019"
+      "name": "Chartiful",
+      "url": "https://chartiful.io",
+      "description": "Beautiful, highly customizable SVG charts for modern front-end web frameworks."
     }
-  ],
-  "sections": [
-    "work",
-    "skills",
-    "projects",
-    "education"
   ]
 }
