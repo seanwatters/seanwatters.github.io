@@ -59,13 +59,11 @@
     },
     {
       "keywords": [
-        "JavaScript",
-        "TypeScript",
-        "Ruby",
-        "Java",
-        "Node.js",
+        "JavaScript (Node.js, TypeScript)",
         "HTML",
-        "CSS"
+        "CSS (SASS, SCSS)",
+        "Ruby",
+        "Java"
       ],
       "name": "Languages"
     },
