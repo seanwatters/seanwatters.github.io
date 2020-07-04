@@ -69,12 +69,11 @@
     },
     {
       "keywords": [
-        "Vue.js",
-        "React.js (Next.js, GatsbyJS, Preact)",
-        "React Native",
+        "Vue",
+        "Svelte",
+        "React (Next.js, GatsbyJS, Preact, React Native)",
         "Rails",
-        "Flutter",
-        "Svelte"
+        "Express"
       ],
       "name": "Frameworks"
     },
@@ -88,28 +87,17 @@
     },
     {
       "keywords": [
-        "SQLite",
-        "PostgreSQL",
-        "AsyncStorage",
-        "IndexDB",
-        "NoSQL",
-        "AWS DynamoDB",
-        "AWS S3"
+        "SQL (SQLite, PostgreSQL, MySQL)",
+        "NoSQL (MongoDB, AsyncStorage, IndexDB, AWS S3, AWS DynamoDB)"
       ],
       "name": "Database"
     },
     {
       "keywords": [
-        "Jest",
-        "Cypress",
-        "Vuex",
-        "MobX",
-        "Redux.js",
-        "Webpack",
-        "Rollup",
-        "GraphQL",
-        "REST",
-        "AWS Lambda"
+        "Testing (Jest, Cypress, Puppetier)",
+        "State Mangement (Vuex, MobX, Redux, Apollo Client)",
+        "Networking / Cloud (REST, GraphQL, Apollo Server, AWS Lambda)",
+        "Bundlers (Webpack, Babel, Rollup)"
       ],
       "name": "Other Technical"
     }
@@ -117,9 +105,9 @@
   "projects": [
     {
       "technologies": [
-        "React.js",
+        "React",
         "React Native",
-        "Vue.js"
+        "Vue"
       ],
       "name": "Chartiful",
       "url": "https://chartiful.io",
