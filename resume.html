@@ -1,261 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-    <meta content="utf-8" http-equiv="encoding">
-    <title>Sean Watters — Resume</title>
-    <link rel="stylesheet" href="css/styles.css" type="text/css">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
-    <script src="src/main.js"></script>
-    <script src="https://kit.fontawesome.com/89c2981c8d.js" crossorigin="anonymous"></script>
-    <script type="module">
-      fetch('https://seanwatters.io/resume.json')
-        .then(res => res.json())
-        .then(data => {
-          const work = data.work
-          const projects = data.projects
-          const skills = data.skills
-          const publications = data.projects
-          const education = data.education
 
-          const experienceRoot = document.getElementById('experience')
-          work.forEach(job => {
-            const title = document.createElement('h1')
-            const timeAtCo = document.createElement('p')
-            const location = document.createElement('p')
-            const position = document.createElement('p')
-            position.className += 'job-position'
-            const highlightsUl = document.createElement('ul')
+<head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta content="utf-8" http-equiv="encoding">
+  <title>Sean Watters — Resume</title>
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+  <script src="src/main.js"></script>
+  <script src="https://kit.fontawesome.com/89c2981c8d.js" crossorigin="anonymous"></script>
+  <script type="module">
+    fetch('https://seanwatters.io/resume.json')
+      .then(res => res.json())
+      .then(data => {
+        const work = data.work
+        const projects = data.projects
+        const skills = data.skills
+        const publications = data.projects
+        const education = data.education
+
+        const experienceRoot = document.getElementById('experience')
+        work.forEach(job => {
+          const title = document.createElement('h1')
+          const timeAtCo = document.createElement('p')
+          const location = document.createElement('p')
+          const position = document.createElement('p')
+          position.className += 'job-position'
+          const highlightsUl = document.createElement('ul')
 
 
-            title.textContent = job.company
-            timeAtCo.textContent = `${job.startDate} - ${job.endDate}`
-            location.textContent = job.location
-            position.textContent = job.position
-            title.className += 'title'
-            job.highlights.forEach(highlight => {
-              const newHighlight = document.createElement('li')
-              newHighlight.textContent = highlight
-              highlightsUl.appendChild(newHighlight)
-            })
-
-            experienceRoot.appendChild(title)
-            experienceRoot.appendChild(timeAtCo)
-            experienceRoot.appendChild(location)
-            experienceRoot.appendChild(position)
-            experienceRoot.appendChild(highlightsUl)
-
+          title.textContent = job.company
+          timeAtCo.textContent = `${job.startDate} - ${job.endDate}`
+          location.textContent = job.location
+          position.textContent = job.position
+          title.className += 'title'
+          job.highlights.forEach(highlight => {
+            const newHighlight = document.createElement('li')
+            newHighlight.textContent = highlight
+            highlightsUl.appendChild(newHighlight)
           })
 
-          const projectsRoot = document.getElementById('projects')
-          projects.forEach(project => {
-            const title = document.createElement('h1')
-            const location = document.createElement('p')
-            const url = document.createElement('a')
-            url.href = project.url
-            const highlightsUl = document.createElement('ul')
-            const technologies = document.createElement('p')
+          experienceRoot.appendChild(title)
+          experienceRoot.appendChild(timeAtCo)
+          experienceRoot.appendChild(location)
+          experienceRoot.appendChild(position)
+          experienceRoot.appendChild(highlightsUl)
 
-            technologies.textContent = 'Technologies:'
-            title.textContent = project.name
-            location.textContent = project.description
-            location.className += 'education-description'
-            url.textContent = project.url.replace(/https:\/\//, '')
-            title.className += 'title'
-            project.technologies.forEach(highlight => {
-              const newHighlight = document.createElement('li')
-              newHighlight.textContent = highlight
-              highlightsUl.appendChild(newHighlight)
-            })
-
-            technologies.appendChild(highlightsUl)
-
-            projectsRoot.appendChild(title)
-            projectsRoot.appendChild(url)
-            projectsRoot.appendChild(location)
-            projectsRoot.appendChild(technologies)
-
-          })
-
-          const skillsRoot = document.getElementById('skills')
-          skills.forEach(skill => {
-            const newSkill = document.createElement('p')
-            const newSkillList = document.createElement('ul')
-
-            newSkill.textContent = `${(skill.name ? skill.name :  '') + (skill.name ? ':' : '')}`
-
-            skill.keywords.forEach(keyword => {
-              const keywordEl = document.createElement('li')
-              keywordEl.textContent = keyword
-              newSkillList.appendChild(keywordEl)
-            })
-
-            newSkill.appendChild(newSkillList)
-            skillsRoot.appendChild(newSkill)
-          })
-          const educationRoot = document.getElementById('education')
-          education.forEach(institution => {
-            const institutionName = document.createElement('h1')
-            const timeAtSchool = document.createElement('p')
-            const areaOfStudy = document.createElement('p')
-            const description = document.createElement('p')
-            areaOfStudy.className += 'area-of-study'
-            institutionName.className += 'title'
-            description.className += 'education-description'
-
-            institutionName.textContent = institution.institution
-            timeAtSchool.textContent = `${institution.location} ${institution.startDate} - ${institution.endDate}`
-            areaOfStudy.textContent = institution.area
-            description.textContent = institution.description
-
-            educationRoot.appendChild(institutionName)
-            educationRoot.appendChild(areaOfStudy)
-            educationRoot.appendChild(timeAtSchool)
-            educationRoot.appendChild(description)
-          })
         })
-        .catch(err => console.log(err))
-    </script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167813886-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'UA-167813886-1');
-    </script>
+        const projectsRoot = document.getElementById('projects')
+        projects.forEach(project => {
+          const title = document.createElement('h1')
+          const location = document.createElement('p')
+          const url = document.createElement('a')
+          url.href = project.url
+          const highlightsUl = document.createElement('ul')
+          const technologies = document.createElement('p')
 
-  </head>
+          technologies.textContent = 'Technologies:'
+          title.textContent = project.name
+          location.textContent = project.description
+          location.className += 'education-description'
+          url.textContent = project.url.replace(/https:\/\//, '')
+          title.className += 'title'
+          project.technologies.forEach(highlight => {
+            const newHighlight = document.createElement('li')
+            newHighlight.textContent = highlight
+            highlightsUl.appendChild(newHighlight)
+          })
 
-  <style>
+          technologies.appendChild(highlightsUl)
+
+          projectsRoot.appendChild(title)
+          projectsRoot.appendChild(url)
+          projectsRoot.appendChild(location)
+          projectsRoot.appendChild(technologies)
+
+        })
+
+        const skillsRoot = document.getElementById('skills')
+        skills.forEach(skill => {
+          const newSkill = document.createElement('p')
+          const newSkillList = document.createElement('ul')
+
+          newSkill.textContent = `${(skill.name ? skill.name : '') + (skill.name ? ':' : '')}`
+
+          skill.keywords.forEach(keyword => {
+            const keywordEl = document.createElement('li')
+            keywordEl.textContent = keyword
+            newSkillList.appendChild(keywordEl)
+          })
+
+          newSkill.appendChild(newSkillList)
+          skillsRoot.appendChild(newSkill)
+        })
+        const educationRoot = document.getElementById('education')
+        education.forEach(institution => {
+          const institutionName = document.createElement('h1')
+          const timeAtSchool = document.createElement('p')
+          const areaOfStudy = document.createElement('p')
+          const description = document.createElement('p')
+          areaOfStudy.className += 'area-of-study'
+          institutionName.className += 'title'
+          description.className += 'education-description'
+
+          institutionName.textContent = institution.institution
+          timeAtSchool.textContent = `${institution.location} ${institution.startDate} - ${institution.endDate}`
+          areaOfStudy.textContent = institution.area
+          description.textContent = institution.description
+
+          educationRoot.appendChild(institutionName)
+          educationRoot.appendChild(areaOfStudy)
+          educationRoot.appendChild(timeAtSchool)
+          educationRoot.appendChild(description)
+        })
+      })
+      .catch(err => console.log(err))
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167813886-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-167813886-1');
+  </script>
+
+</head>
+
+<style>
+  .resume-body {
+    margin: auto;
+    width: 55%;
+  }
+
+  .education-description {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    margin-left: 8%;
+  }
+
+  ul {
+    width: 85%;
+    margin-bottom: 30px;
+  }
+
+  li {
+    margin-top: 7px;
+    margin-bottom: 7px;
+    font-size: 14px;
+  }
+
+  p {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    line-height: 200%;
+    margin-left: 5%;
+  }
+
+  .job-position {
+    margin-top: 20px;
+    font-weight: 600;
+  }
+
+  .area-of-study {
+    font-weight: 600;
+  }
+
+  .title {
+    font-weight: 600;
+    font-size: 18px;
+    margin-left: 5%;
+    margin-top: 40px;
+  }
+
+  .section {
+    margin-bottom: 70px;
+  }
+
+  @media only screen and (max-width : 420px) {
+    body {
+      width: 100%;
+      margin-right: 0px;
+    }
+
     .resume-body {
       margin: auto;
-      width: 55%;
+      width: 90%;
     }
-    .education-description {
-      margin-top: 15px;
-      margin-bottom: 15px;
-      font-size: 14px;
-      margin-left: 8%;
-    }
-    ul {
-      width: 85%;
-      margin-bottom: 30px;
-    }
-    li {
-      margin-top: 7px;
-      margin-bottom: 7px;
-      font-size: 14px;
-    }
-    p {
-      margin-bottom: 0px;
-      margin-top: 0px;
-      line-height: 200%;
-      margin-left: 5%;
-    }
+
     .job-position {
+      margin-top: 10px;
+      font-weight: 600;
+      font-size: 15px;
+    }
+
+    ul {
+      width: 80%;
+      font-size: 12px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
       margin-top: 20px;
-      font-weight: 600;
-    }
-    .area-of-study {
-      font-weight: 600;
-    }
-    .title {
-      font-weight: 600;
-      font-size: 18px;
-      margin-left: 5%;
-      margin-top: 40px;
-    }
-    .section {
-      margin-bottom: 70px;
     }
 
-    @media only screen and (max-width : 420px) {
-      body {
-        width: 100%;
-        margin-right: 0px;
-      }
-      .resume-body {
-        margin: auto;
-        width: 90%;
-      }
-      .job-position {
-        margin-top: 10px;
-        font-weight: 600;
-        font-size: 15px;
-      }
-      ul {
-        width: 80%;
-        font-size: 12px;
-      }
-      h1 {
-        margin-bottom: 20px;
-        margin-top: 20px;
-      }
-      p {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        font-size: 12px;
-        line-height: 200%;
-        max-width: 95%;
-        min-width: 95%;
-      }
+    p {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 12px;
+      line-height: 200%;
+      max-width: 95%;
+      min-width: 95%;
     }
-  </style>
+  }
+</style>
 
-  <body>
-    <header>
-      <div class="pre-band">
-        <a class="name-header" href="index">sean watters — software engineer</a>
-        <div class="page-navigation-links">
-          <nav class="nav-links">
-            <a href="index">Home</a>
-            <a href="blog">Blog</a>
-            <a href="resume">Resume</a>
-          </nav>
-        </div>
+<body>
+  <header>
+    <div class="pre-band">
+      <a class="name-header" href="index">sean watters — software engineer</a>
+      <div class="page-navigation-links">
+        <nav class="nav-links">
+          <a href="index">Home</a>
+          <a href="blog">Blog</a>
+          <a href="resume">Resume</a>
+        </nav>
       </div>
-      <nav class="external-icons">
-        <a href="https://www.linkedin.com/in/seanwatters"><i class="external-icon fab fa-linkedin"></i></a>
-        <a href="https://medium.com/@sean_watters"><i class="external-icon fab fa-medium"></i></a>
-        <a href="https://twitter.com/sean_watters"><i class="external-icon fab fa-twitter"></i></a>
-        <a href="https://github.com/seanwatters"><i class="external-icon fab fa-github"></i></a>
-        <a href="https://gitlab.com/sean_watters"><i class="external-icon fab fa-gitlab"></i></a>
-      </nav>
-      <div class="page-title">
-        <h1 class="title-style">resum&eacute;</h1>
-      </div>
-    </header>
+    </div>
+    <nav class="external-icons">
+      <a href="https://www.linkedin.com/in/seanwatters"><i class="external-icon fab fa-linkedin"></i></a>
+      <a href="https://medium.com/@sean_watters"><i class="external-icon fab fa-medium"></i></a>
+      <a href="https://twitter.com/sean_watters"><i class="external-icon fab fa-twitter"></i></a>
+      <a href="https://github.com/seanwatters"><i class="external-icon fab fa-github"></i></a>
+      <a href="https://gitlab.com/sean_watters"><i class="external-icon fab fa-gitlab"></i></a>
+    </nav>
+    <div class="page-title">
+      <h1 class="title-style">resum&eacute;</h1>
+    </div>
+  </header>
 
-    <main>
-      <div class="resume-body">
-        <div id="experience" class="section">
-          <h1>experience</h1>
-        </div>
-        <div id="projects" class="section">
-          <h1>projects</h1>
-        </div>
-        <div id="education" class="section">
-          <h1>education</h1>
-        </div>
-        <div id="skills" class="section">
-          <h1>skills</h1>
-        </div>
+  <main>
+    <div class="resume-body">
+      <div id="experience" class="section">
+        <h1>experience</h1>
       </div>
-    </main>
+      <div id="projects" class="section">
+        <h1>projects</h1>
+      </div>
+      <div id="education" class="section">
+        <h1>education</h1>
+      </div>
+      <div id="skills" class="section">
+        <h1>skills</h1>
+      </div>
+    </div>
+  </main>
 
-    <footer>
-      <div class="footer-band">
-        <div class="footer-external-icons">
-          <a href="https://www.linkedin.com/in/seanwatters"><i class="footer-external-icon fab fa-linkedin"></i></a>
-          <a href="https://medium.com/@sean_watters"><i class="footer-external-icon fab fa-medium"></i></a>
-          <a href="https://twitter.com/sean_watters"><i class="footer-external-icon fab fa-twitter"></i></a>
-          <a href="https://github.com/seanwatters"><i class="footer-external-icon fab fa-github"></i></a>
-          <a href="https://gitlab.com/sean_watters"><i class="footer-external-icon fab fa-gitlab"></i></a>
-        </div>
-        <div class="tm">© 2019 sean watters</div>
+  <footer>
+    <div class="footer-band">
+      <div class="footer-external-icons">
+        <a href="https://www.linkedin.com/in/seanwatters"><i class="footer-external-icon fab fa-linkedin"></i></a>
+        <a href="https://medium.com/@sean_watters"><i class="footer-external-icon fab fa-medium"></i></a>
+        <a href="https://twitter.com/sean_watters"><i class="footer-external-icon fab fa-twitter"></i></a>
+        <a href="https://github.com/seanwatters"><i class="footer-external-icon fab fa-github"></i></a>
+        <a href="https://gitlab.com/sean_watters"><i class="footer-external-icon fab fa-gitlab"></i></a>
       </div>
-    </footer>
-  </body>
+      <div class="tm">© 2019 sean watters</div>
+    </div>
+  </footer>
+</body>
+
 </html>
