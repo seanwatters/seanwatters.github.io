@@ -48,35 +48,35 @@
 
         })
 
-        const projectsRoot = document.getElementById('projects')
-        projects.forEach(project => {
-          const title = document.createElement('h1')
-          const location = document.createElement('p')
-          const url = document.createElement('a')
-          url.href = project.url
-          const highlightsUl = document.createElement('ul')
-          const technologies = document.createElement('p')
+        // const projectsRoot = document.getElementById('projects')
+        // projects.forEach(project => {
+        //   const title = document.createElement('h1')
+        //   const location = document.createElement('p')
+        //   const url = document.createElement('a')
+        //   url.href = project.url
+        //   const highlightsUl = document.createElement('ul')
+        //   const technologies = document.createElement('p')
 
-          technologies.textContent = 'Technologies:'
-          title.textContent = project.name
-          location.textContent = project.description
-          location.className += 'education-description'
-          url.textContent = project.url.replace(/https:\/\//, '')
-          title.className += 'title'
-          project.technologies.forEach(highlight => {
-            const newHighlight = document.createElement('li')
-            newHighlight.textContent = highlight
-            highlightsUl.appendChild(newHighlight)
-          })
+        //   technologies.textContent = 'Technologies:'
+        //   title.textContent = project.name
+        //   location.textContent = project.description
+        //   location.className += 'education-description'
+        //   url.textContent = project.url.replace(/https:\/\//, '')
+        //   title.className += 'title'
+        //   project.technologies.forEach(highlight => {
+        //     const newHighlight = document.createElement('li')
+        //     newHighlight.textContent = highlight
+        //     highlightsUl.appendChild(newHighlight)
+        //   })
 
-          technologies.appendChild(highlightsUl)
+        //   technologies.appendChild(highlightsUl)
 
-          projectsRoot.appendChild(title)
-          projectsRoot.appendChild(url)
-          projectsRoot.appendChild(location)
-          projectsRoot.appendChild(technologies)
+        //   projectsRoot.appendChild(title)
+        //   projectsRoot.appendChild(url)
+        //   projectsRoot.appendChild(location)
+        //   projectsRoot.appendChild(technologies)
 
-        })
+        // })
 
         const skillsRoot = document.getElementById('skills')
         skills.forEach(skill => {
@@ -247,9 +247,9 @@
       <div id="experience" class="section">
         <h1>experience</h1>
       </div>
-      <div id="projects" class="section">
+      <!-- <div id="projects" class="section">
         <h1>projects</h1>
-      </div>
+      </div> -->
       <div id="education" class="section">
         <h1>education</h1>
       </div>
