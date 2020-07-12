@@ -20,6 +20,19 @@ a:active {
   text-decoration: underline;
 }
 
+.LI-badge-container-horizontal-dark {
+  width: 100% !important;
+}
+.LI-profile-badge {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  filter: grayscale(100%);
+}
+.LI-more-info {
+  width: 200px;
+}
+
 
 /* header */
 .pre-band {
