@@ -169,6 +169,21 @@ ul {
   margin-top: 20px; clear: both;
 }
 
+body {
+  position: relative;
+  min-height: 100vh;
+}
+
+main {
+  padding-bottom: 300px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
 
 /* tablet */
 @media only screen and (min-width: 421px) and (max-width : 768px) {
