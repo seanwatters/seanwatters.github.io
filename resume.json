@@ -19,11 +19,22 @@
   ],
   "work": [
     {
+      "company": "ISSA (International Sports Sciences Association)",
+      "location": "Phoenix, AZ",
+      "position": "Front End Engineer",
+      "website": "",
+      "endDate": "Present",
+      "highlights": [
+        "Too soon to tell..."
+      ],
+      "startDate": "August 2020"
+    },
+    {
       "company": "Nikola Motor Company",
       "location": "Phoenix, AZ",
       "position": "Software Engineer",
       "website": "",
-      "endDate": "Present",
+      "endDate": "August 2020",
       "highlights": [
         "Improved UX responsiveness and reduced memory consumption by 30% by selecting new front-end framework for in-vehicle-display systems",
         "Optimized JavaScript code to support WebGL animation and updates to UI at 10x a second from data streamed over websocket",
